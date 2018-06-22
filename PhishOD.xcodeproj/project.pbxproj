@@ -344,8 +344,6 @@
 		7C97CE1D1B4394650010B82B /* IGSourceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C97CE1B1B4394650010B82B /* IGSourceCell.m */; };
 		7C97CE1E1B4394650010B82B /* IGSourceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C97CE1C1B4394650010B82B /* IGSourceCell.xib */; };
 		7CA833761C5ACDFC00B5DFA9 /* RLSourceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA833751C5ACDFB00B5DFA9 /* RLSourceDetailsViewController.m */; };
-		7CA833831C5BCC0300B5DFA9 /* TCBlobDownloadSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7CA8337D1C5BCBD600B5DFA9 /* TCBlobDownloadSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7CA833871C5BCC1100B5DFA9 /* TCBlobDownloadSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7CA8337D1C5BCBD600B5DFA9 /* TCBlobDownloadSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7CA8338E1C5BE81C00B5DFA9 /* AGQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8338D1C5BE81C00B5DFA9 /* AGQueue.m */; };
 		7CA8338F1C5BE81C00B5DFA9 /* AGQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8338D1C5BE81C00B5DFA9 /* AGQueue.m */; };
 		7CA833931C5C02B000B5DFA9 /* PHODDownloadingTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA833911C5C02B000B5DFA9 /* PHODDownloadingTrackCell.m */; };
@@ -468,34 +466,6 @@
 			remoteGlobalIDString = 7C10A7BC1B33B51700692DD3;
 			remoteInfo = Relisten;
 		};
-		7CA8337C1C5BCBD600B5DFA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7CA833771C5BCBD600B5DFA9 /* TCBlobDownloadSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C3B08D121A53398A00341164;
-			remoteInfo = TCBlobDownloadSwift;
-		};
-		7CA8337E1C5BCBD600B5DFA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7CA833771C5BCBD600B5DFA9 /* TCBlobDownloadSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C3B08D1D1A53398A00341164;
-			remoteInfo = TCBlobDownloadSwiftTests;
-		};
-		7CA833801C5BCBE700B5DFA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7CA833771C5BCBD600B5DFA9 /* TCBlobDownloadSwift.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C3B08D111A53398A00341164;
-			remoteInfo = TCBlobDownloadSwift;
-		};
-		7CA833841C5BCC0700B5DFA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7CA833771C5BCBD600B5DFA9 /* TCBlobDownloadSwift.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C3B08D111A53398A00341164;
-			remoteInfo = TCBlobDownloadSwift;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -505,7 +475,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7CA833831C5BCC0300B5DFA9 /* TCBlobDownloadSwift.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +484,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7CA833871C5BCC1100B5DFA9 /* TCBlobDownloadSwift.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,7 +733,6 @@
 		7C9BFB741B640DBC00F5CF29 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		7CA833741C5ACDFB00B5DFA9 /* RLSourceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RLSourceDetailsViewController.h; path = Controllers/Panels/Browse/Shows/RLSourceDetailsViewController.h; sourceTree = "<group>"; };
 		7CA833751C5ACDFB00B5DFA9 /* RLSourceDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RLSourceDetailsViewController.m; path = Controllers/Panels/Browse/Shows/RLSourceDetailsViewController.m; sourceTree = "<group>"; };
-		7CA833771C5BCBD600B5DFA9 /* TCBlobDownloadSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TCBlobDownloadSwift.xcodeproj; path = Vendor/TCBlobDownloadSwift/TCBlobDownloadSwift.xcodeproj; sourceTree = "<group>"; };
 		7CA8338C1C5BE81C00B5DFA9 /* AGQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGQueue.h; path = Shared/AGQueue.h; sourceTree = "<group>"; };
 		7CA8338D1C5BE81C00B5DFA9 /* AGQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGQueue.m; path = Shared/AGQueue.m; sourceTree = "<group>"; };
 		7CA833901C5C02B000B5DFA9 /* PHODDownloadingTrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHODDownloadingTrackCell.h; path = Controllers/Panels/Downloads/PHODDownloadingTrackCell.h; sourceTree = "<group>"; };
@@ -1269,7 +1236,6 @@
 		7C35782D1B5C052000329368 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				7CA833771C5BCBD600B5DFA9 /* TCBlobDownloadSwift.xcodeproj */,
 				7C35782E1B5C052B00329368 /* ObjectivePersistence */,
 				7CA8338C1C5BE81C00B5DFA9 /* AGQueue.h */,
 				7CA8338D1C5BE81C00B5DFA9 /* AGQueue.m */,
@@ -1735,15 +1701,6 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		7CA833781C5BCBD600B5DFA9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7CA8337D1C5BCBD600B5DFA9 /* TCBlobDownloadSwift.framework */,
-				7CA8337F1C5BCBD600B5DFA9 /* TCBlobDownloadSwiftTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7CACD4F117A4584900E84B28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -2054,19 +2011,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C10A8821B33B51700692DD3 /* Build configuration list for PBXNativeTarget "Relisten" */;
 			buildPhases = (
+				A316345DCBDA55CB1CE3925D /* [CP] Check Pods Manifest.lock */,
 				7003033980095B8111645DE5 /* Check Pods Manifest.lock */,
 				7C10A7BE1B33B51700692DD3 /* Sources */,
 				7C10A8401B33B51700692DD3 /* Frameworks */,
 				7C10A8511B33B51700692DD3 /* Resources */,
 				7C10A8801B33B51700692DD3 /* ShellScript */,
-				8704A2D99022D3C3445C768A /* Embed Pods Frameworks */,
 				81C930B20E324BD1B18E10F5 /* Copy Pods Resources */,
 				7CA833861C5BCC0B00B5DFA9 /* CopyFiles */,
+				218C2A8795F8E2765EC109E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7CA833851C5BCC0700B5DFA9 /* PBXTargetDependency */,
 			);
 			name = Relisten;
 			productName = PhishOD;
@@ -2095,19 +2052,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C518C1E175D0C32005EB2E7 /* Build configuration list for PBXNativeTarget "PhishOD" */;
 			buildPhases = (
+				C03A18030D42A5D79EEC6E4E /* [CP] Check Pods Manifest.lock */,
 				B7C1BE873E0F027D528846BE /* Check Pods Manifest.lock */,
 				7C518BFD175D0C32005EB2E7 /* Sources */,
 				7C518BFE175D0C32005EB2E7 /* Frameworks */,
 				7C518BFF175D0C32005EB2E7 /* Resources */,
 				C5167BCE19F03C9600E11AB7 /* ShellScript */,
-				FD3DDCF96CB7E7EE190F58CE /* Embed Pods Frameworks */,
 				DB53BE6021682D35055E16FB /* Copy Pods Resources */,
 				7CA833821C5BCBFA00B5DFA9 /* CopyFiles */,
+				72FA88F4A7E29B58FB07C337 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7CA833811C5BCBE700B5DFA9 /* PBXTargetDependency */,
 			);
 			name = PhishOD;
 			productName = PhishOD;
@@ -2161,12 +2118,6 @@
 			mainGroup = 7C518BF8175D0C32005EB2E7;
 			productRefGroup = 7C518C02175D0C32005EB2E7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 7CA833781C5BCBD600B5DFA9 /* Products */;
-					ProjectRef = 7CA833771C5BCBD600B5DFA9 /* TCBlobDownloadSwift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				7C518C00175D0C32005EB2E7 /* PhishOD */,
@@ -2175,23 +2126,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7CA8337D1C5BCBD600B5DFA9 /* TCBlobDownloadSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = TCBlobDownloadSwift.framework;
-			remoteRef = 7CA8337C1C5BCBD600B5DFA9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7CA8337F1C5BCBD600B5DFA9 /* TCBlobDownloadSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TCBlobDownloadSwiftTests.xctest;
-			remoteRef = 7CA8337E1C5BCBD600B5DFA9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7C10A8511B33B51700692DD3 /* Resources */ = {
@@ -2323,6 +2257,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		218C2A8795F8E2765EC109E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AGAudioPlayer/AGAudioPlayer.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Appirater/Appirater.bundle",
+				"${PODS_ROOT}/Instabug/Instabug.bundle",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/ar.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/en.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/es.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/it.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/ko.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/ru.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/zh-Hans.lproj",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle/SVWebViewControllerBack.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle/SVWebViewControllerBack@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle/SVWebViewControllerNext.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle/SVWebViewControllerNext@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome-iPad.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome-iPad@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari-iPad.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari-iPad@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle",
+				"${PODS_ROOT}/VTAcknowledgementsViewController/VTAcknowledgementsViewController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AGAudioPlayer.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Appirater.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Instabug.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ar.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/es.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/it.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ko.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ru.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerBack.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerBack@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerNext.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerNext@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivityChrome-iPad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivityChrome-iPad@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivityChrome@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivitySafari-iPad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivitySafari-iPad@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivitySafari@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VTAcknowledgementsViewController.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7003033980095B8111645DE5 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2336,6 +2332,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72FA88F4A7E29B58FB07C337 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AGAudioPlayer/AGAudioPlayer.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Appirater/Appirater.bundle",
+				"${PODS_ROOT}/Instabug/Instabug.bundle",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/ar.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/en.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/es.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/it.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/ko.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/ru.lproj",
+				"${PODS_ROOT}/PSUpdateApp/PSUpdateApp/Localizations/zh-Hans.lproj",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle/SVWebViewControllerBack.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle/SVWebViewControllerBack@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle/SVWebViewControllerNext.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle/SVWebViewControllerNext@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome-iPad.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome-iPad@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari-iPad.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari-iPad@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari@2x.png",
+				"${PODS_ROOT}/SVWebViewController/SVWebViewController/SVWebViewController.bundle",
+				"${PODS_ROOT}/VTAcknowledgementsViewController/VTAcknowledgementsViewController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AGAudioPlayer.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Appirater.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Instabug.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ar.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/es.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/it.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ko.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ru.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerBack.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerBack@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerNext.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerNext@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivityChrome-iPad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivityChrome-iPad@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivityChrome@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivitySafari-iPad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivitySafari-iPad@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewControllerActivitySafari@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVWebViewController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VTAcknowledgementsViewController.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7C10A8801B33B51700692DD3 /* ShellScript */ = {
@@ -2366,19 +2424,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8704A2D99022D3C3445C768A /* Embed Pods Frameworks */ = {
+		A316345DCBDA55CB1CE3925D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhishOD-Relisten-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7C1BE873E0F027D528846BE /* Check Pods Manifest.lock */ = {
@@ -2394,6 +2455,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C03A18030D42A5D79EEC6E4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhishOD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5167BCE19F03C9600E11AB7 /* ShellScript */ = {
@@ -2422,21 +2501,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD3DDCF96CB7E7EE190F58CE /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2785,16 +2849,6 @@
 			target = 7C10A7BC1B33B51700692DD3 /* Relisten */;
 			targetProxy = 7C48C4051BDA7A5C00F982B6 /* PBXContainerItemProxy */;
 		};
-		7CA833811C5BCBE700B5DFA9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TCBlobDownloadSwift;
-			targetProxy = 7CA833801C5BCBE700B5DFA9 /* PBXContainerItemProxy */;
-		};
-		7CA833851C5BCC0700B5DFA9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TCBlobDownloadSwift;
-			targetProxy = 7CA833841C5BCC0700B5DFA9 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -2840,7 +2894,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhishOD/Supporting Files/PhishOD-Prefix.pch";
 				INFOPLIST_FILE = "PhishOD copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = Relisten;
@@ -2875,7 +2929,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhishOD/Supporting Files/PhishOD-Prefix.pch";
 				INFOPLIST_FILE = "PhishOD copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = Relisten;
@@ -2909,7 +2963,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhishOD/Supporting Files/PhishOD-Prefix.pch";
 				INFOPLIST_FILE = "PhishOD copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = Relisten;
@@ -2950,10 +3004,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "0AD79C8B-0B49-4BE9-9346-4A9D75127F8F";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Snapshot;
@@ -2985,7 +3040,7 @@
 					IS_PHISH,
 				);
 				INFOPLIST_FILE = "PhishOD/Supporting Files/PhishOD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3024,7 +3079,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhishOD/Supporting Files/PhishOD-Prefix.pch";
 				INFOPLIST_FILE = "PhishOD copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = Relisten;
@@ -3054,7 +3109,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = RelistenSnapshot/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = net.relisten.ios.RelistenSnapshot;
@@ -3084,7 +3139,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = RelistenSnapshot/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = net.relisten.ios.RelistenSnapshot;
@@ -3116,7 +3171,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = RelistenSnapshot/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.relisten.ios.RelistenSnapshot;
@@ -3148,7 +3203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = RelistenSnapshot/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.relisten.ios.RelistenSnapshot;
@@ -3189,10 +3244,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "0AD79C8B-0B49-4BE9-9346-4A9D75127F8F";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3219,10 +3275,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "99A77BF7-92DF-4444-831C-C3CF3091070B";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3255,7 +3312,7 @@
 					IS_PHISH,
 				);
 				INFOPLIST_FILE = "PhishOD/Supporting Files/PhishOD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3298,7 +3355,7 @@
 					IS_PHISH,
 				);
 				INFOPLIST_FILE = "PhishOD/Supporting Files/PhishOD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3335,10 +3392,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "031C5471-2CCA-4BD3-B446-77B0CD1DF8DA";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3371,7 +3429,7 @@
 					IS_PHISH,
 				);
 				INFOPLIST_FILE = "PhishOD/Supporting Files/PhishOD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

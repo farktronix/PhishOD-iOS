@@ -1,82 +1,85 @@
 PODS:
-  - AFNetworkActivityLogger (2.0.4):
-    - AFNetworking/NSURLConnection (~> 2.0)
-    - AFNetworking/NSURLSession (~> 2.0)
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworkActivityLogger (3.0.0):
+    - AFNetworking/NSURLSession (~> 3.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - AGAudioPlayer (0.8.0):
-    - HysteriaPlayer
-  - Appirater (2.0.5)
+    - BASSGaplessAudioPlayer
+    - BCColor
+    - Interpolate
+    - MarqueeLabel
+    - NapySlider
+  - Appirater (2.3.1)
   - ASImageResize (1.0.3)
-  - AXRatingView (1.0.3)
+  - AXRatingView (1.0.6)
+  - BASSGaplessAudioPlayer (0.0.1)
+  - BCColor (0.2)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
-  - Crashlytics (3.6.0):
-    - Fabric (~> 1.6.3)
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
   - CSNNotificationObserver (0.9.2)
-  - DBGHTMLEntities (0.2.0)
-  - DZNEmptyDataSet (1.7.3)
-  - EDColor (1.0.0)
-  - EGOCache (2.1.3)
-  - Fabric (1.6.4)
-  - FastImageCache (1.3)
-  - FCFileManager (1.0.17)
-  - Flurry-iOS-SDK (7.3.0):
-    - Flurry-iOS-SDK/FlurrySDK (= 7.3.0)
-  - Flurry-iOS-SDK/FlurrySDK (7.3.0)
-  - FreeStreamer (3.4.2):
+  - DBGHTMLEntities (1.1.0)
+  - DZNEmptyDataSet (1.8.1)
+  - EDColor (1.0.1)
+  - EGOCache (2.2.0)
+  - Fabric (1.7.7)
+  - FastImageCache (1.5.1)
+  - FCFileManager (1.0.20)
+  - Flurry-iOS-SDK (9.0.0):
+    - Flurry-iOS-SDK/FlurrySDK (= 9.0.0)
+  - Flurry-iOS-SDK/FlurrySDK (9.0.0)
+  - FreeStreamer (3.8.3):
     - Reachability (~> 3.0)
   - FXKeychain (1.5.3)
-  - GroundControl (2.1.0):
-    - AFNetworking (~> 2.2)
-  - HysteriaPlayer (2.1.6)
+  - GroundControl (3.0.0):
+    - AFNetworking
   - Instabug (4.1.10)
-  - JSONModel (1.2.0)
-  - KissXML (5.0.2):
-    - KissXML/Standard (= 5.0.2)
-  - KissXML/Core (5.0.2)
-  - KissXML/Standard (5.0.2):
+  - Interpolate (1.0.0)
+  - JSONModel (1.7.0)
+  - KissXML (5.0.3):
+    - KissXML/Standard (= 5.0.3)
+  - KissXML/Core (5.0.3)
+  - KissXML/Standard (5.0.3):
     - KissXML/Core
-  - KVOController (1.0.3)
-  - LastFm (1.15.0):
-    - KissXML (~> 5.0)
+  - KVOController (1.2.0)
+  - LastFm (1.17.0):
+    - KissXML (~> 5.0.3)
   - LLACircularProgressView (0.1.1)
-  - MarqueeLabel (2.5.0)
-  - NAKPlaybackIndicatorView (0.0.3)
+  - MarqueeLabel (3.1.6):
+    - MarqueeLabel/ObjC (= 3.1.6)
+  - MarqueeLabel/ObjC (3.1.6)
+  - NAKPlaybackIndicatorView (0.1.1)
+  - NapySlider (0.3.2)
   - NSObject-NSCoding (1.0)
   - ObjectiveSugar (1.1.0)
-  - PSUpdateApp (2.0.5):
-    - AFNetworking (~> 2.2)
+  - PSUpdateApp (3.0):
+    - AFNetworking (~> 3.0)
   - Reachability (3.2)
   - SDCloudUserDefaults (1.0.2)
-  - SDWebImage (3.7.5):
-    - SDWebImage/Core (= 3.7.5)
-  - SDWebImage/Core (3.7.5)
-  - SVProgressHUD (2.0-beta8)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.2.5)
   - SVWebViewController (1.0)
-  - TDBadgedCell (3.0)
-  - Toast (3.0)
-  - TTTAttributedLabel (1.13.4)
+  - TCBlobDownloadSwift (0.1.15)
+  - TDBadgedCell (5.3.1)
+  - Toast (4.0.0)
+  - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
   - VTAcknowledgementsViewController (0.17)
@@ -84,10 +87,11 @@ PODS:
 DEPENDENCIES:
   - AFNetworkActivityLogger
   - AFNetworking
-  - AGAudioPlayer (from `../AGAudioPlayer`)
+  - AGAudioPlayer (from `https://github.com/farktronix/AGAudioPlayer.git`)
   - Appirater
-  - ASImageResize (~> 1.0)
+  - ASImageResize (from `https://github.com/sealz/ASImageResize`)
   - AXRatingView
+  - BASSGaplessAudioPlayer (from `https://github.com/farktronix/gapless-audio-bass-ios.git`)
   - ChameleonFramework
   - Crashlytics
   - CSNNotificationObserver
@@ -101,7 +105,7 @@ DEPENDENCIES:
   - Flurry-iOS-SDK
   - FreeStreamer
   - FXKeychain
-  - GroundControl (~> 2.1.0)
+  - GroundControl (from `https://github.com/gshahbazian/GroundControl.git`)
   - Instabug (~> 4.1)
   - JSONModel
   - KVOController
@@ -111,88 +115,152 @@ DEPENDENCIES:
   - NAKPlaybackIndicatorView
   - NSObject-NSCoding (from `https://github.com/alecgorge/NSObject-NSCoding.git`, branch `master`)
   - ObjectiveSugar
-  - PSUpdateApp (from `https://github.com/alecgorge/PSUpdateApp.git`)
+  - PSUpdateApp (from `https://github.com/farktronix/PSUpdateApp.git`)
   - SDCloudUserDefaults
-  - SDWebImage
+  - SDWebImage (~> 3.7)
   - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
   - SVWebViewController
-  - TDBadgedCell (from `https://github.com/tmdvs/TDBadgedCell.git`)
+  - TCBlobDownloadSwift (from `https://github.com/farktronix/TCBlobDownloadSwift.git`)
+  - TDBadgedCell
   - Toast
   - TTTAttributedLabel
   - UIActivityIndicator-for-SDWebImage
   - VTAcknowledgementsViewController (~> 0.14)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworkActivityLogger
+    - AFNetworking
+    - Appirater
+    - AXRatingView
+    - BCColor
+    - ChameleonFramework
+    - Crashlytics
+    - CSNNotificationObserver
+    - DBGHTMLEntities
+    - DZNEmptyDataSet
+    - EDColor
+    - EGOCache
+    - Fabric
+    - FastImageCache
+    - FCFileManager
+    - Flurry-iOS-SDK
+    - FreeStreamer
+    - FXKeychain
+    - Instabug
+    - Interpolate
+    - JSONModel
+    - KissXML
+    - KVOController
+    - LastFm
+    - LLACircularProgressView
+    - MarqueeLabel
+    - NAKPlaybackIndicatorView
+    - NapySlider
+    - ObjectiveSugar
+    - Reachability
+    - SDCloudUserDefaults
+    - SDWebImage
+    - SVWebViewController
+    - TDBadgedCell
+    - Toast
+    - TTTAttributedLabel
+    - UIActivityIndicator-for-SDWebImage
+    - VTAcknowledgementsViewController
+
 EXTERNAL SOURCES:
   AGAudioPlayer:
-    :path: ../AGAudioPlayer
+    :git: https://github.com/farktronix/AGAudioPlayer.git
+  ASImageResize:
+    :git: https://github.com/sealz/ASImageResize
+  BASSGaplessAudioPlayer:
+    :git: https://github.com/farktronix/gapless-audio-bass-ios.git
+  GroundControl:
+    :git: https://github.com/gshahbazian/GroundControl.git
   NSObject-NSCoding:
     :branch: master
     :git: https://github.com/alecgorge/NSObject-NSCoding.git
   PSUpdateApp:
-    :git: https://github.com/alecgorge/PSUpdateApp.git
+    :git: https://github.com/farktronix/PSUpdateApp.git
   SVProgressHUD:
     :git: https://github.com/SVProgressHUD/SVProgressHUD.git
-  TDBadgedCell:
-    :git: https://github.com/tmdvs/TDBadgedCell.git
+  TCBlobDownloadSwift:
+    :git: https://github.com/farktronix/TCBlobDownloadSwift.git
 
 CHECKOUT OPTIONS:
+  AGAudioPlayer:
+    :commit: d7b21fdcde9ae361405270058b92f945b9f175f1
+    :git: https://github.com/farktronix/AGAudioPlayer.git
+  ASImageResize:
+    :commit: 02486719415322af68d835ec9b030d167537996b
+    :git: https://github.com/sealz/ASImageResize
+  BASSGaplessAudioPlayer:
+    :commit: b325279b207e1f375b51873609cfd435db8a98a7
+    :git: https://github.com/farktronix/gapless-audio-bass-ios.git
+  GroundControl:
+    :commit: f75412c570120fb7ef6ce9af918603d5bc99530a
+    :git: https://github.com/gshahbazian/GroundControl.git
   NSObject-NSCoding:
     :commit: 7965e5766f076c535c0c9a26dc56034cd292487b
     :git: https://github.com/alecgorge/NSObject-NSCoding.git
   PSUpdateApp:
-    :commit: 5c72c0a33ef641d181a9016a3208a01679bf6dc4
-    :git: https://github.com/alecgorge/PSUpdateApp.git
+    :commit: 4a9af2ccb49901b1cf7e3d78212c8898407a2ada
+    :git: https://github.com/farktronix/PSUpdateApp.git
   SVProgressHUD:
-    :commit: d98bf9efb0295d8adb6f62f78372a54707676634
+    :commit: 12ef3375791136be10cc8685fa8074ec56a64491
     :git: https://github.com/SVProgressHUD/SVProgressHUD.git
-  TDBadgedCell:
-    :commit: dc9258e52233182cc32d2897f6b82636d17c22a7
-    :git: https://github.com/tmdvs/TDBadgedCell.git
+  TCBlobDownloadSwift:
+    :commit: 694f3680241f3ddb7768d1edbbb730bf8e2680b5
+    :git: https://github.com/farktronix/TCBlobDownloadSwift.git
 
 SPEC CHECKSUMS:
-  AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  AGAudioPlayer: 356be857859b28e293f3cb4ecf493f42aa2cfba5
-  Appirater: e7c0a47fb67ee5041ce8479e6ba960927fb40264
-  ASImageResize: c8ae8a2a7c57cbffbc39d756bc896f8384f0ca40
-  AXRatingView: ccaadc1bbda99a4b7e1d556059482d2b933a9f4e
+  AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AGAudioPlayer: 6788a6536fd6ba55b1b4cae5f25e4f5d51fe7a87
+  Appirater: 44a4651f7912a17dc906b655f0c215d5bb768b84
+  ASImageResize: 199e6d10a32b706f8cedb08b8bc041d7125f9261
+  AXRatingView: b975cd1a11c6c2e76c8999c166e089ed26f54133
+  BASSGaplessAudioPlayer: 5b074495769769192b720c70aa2a60f6f33751f3
+  BCColor: 2425540cb0da92795b81a1f15b5289a92279c9eb
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
   CSNNotificationObserver: bf3a8781aba027abb16c2f5a63f1a7b1de044d49
-  DBGHTMLEntities: df8979bda566bf0ac4a66e6e7c14c005f4552ee9
-  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
-  EDColor: c83f9a61f9f9b3c23d541f1feb561558e29cb088
-  EGOCache: f0295dbe041156acabd39021354ad1045ee49e72
-  Fabric: ed41fd62173c6bdea24ab02c9d7707161eabb750
-  FastImageCache: 25f214fd46405daca3d1995d783fb83b9036c62e
-  FCFileManager: 8bfc931ce2a6223676147e9baf0e8a65c691eca6
-  Flurry-iOS-SDK: 054befae0fa0244fb000985bfe757d70f87a9f60
-  FreeStreamer: 19071533508c214f2201840458265a3d1b7ac146
+  DBGHTMLEntities: e44329e98c0258ff89508c7915829a04fcfec1b0
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  EDColor: 91d127cd67d7c1d3862846fb11ef4b3851151bfa
+  EGOCache: 191fd213da6804d487b49b1a91772ba904f3e324
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  FastImageCache: 2e7a6f677b15336eb3d1a4092a494676256c891d
+  FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
+  Flurry-iOS-SDK: 58e48e417fee667154e4d240040b270b3734d28a
+  FreeStreamer: b205b0bf6a2e7855f935369145498f930eb27cac
   FXKeychain: 2fe54573946ffef634f4e2a2851e6c8f4ea15e76
-  GroundControl: fbc762e0097feece7fb6d8cdc8f2747a504a6833
-  HysteriaPlayer: 8c72e5e608c4d39c9438bbfbafb2ba09bec669e5
+  GroundControl: e4e8ef3b402509611ab2d0c023ebf8842fe080bd
   Instabug: 67d01dc94d780a3eb787563fc7a1c32ef5dd8a1f
-  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
-  KissXML: 99a1b688b6920895f527f5e3ad5f31b6bef6a213
-  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
-  LastFm: 28c752f8e8646531524a123ce7f6722bbfc9d3c5
+  Interpolate: cd0ab81375ff3ec7d9e6023e032f4a29f53df4ad
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  KissXML: d19dd6dc65e0dc721ba92b3077b8ebdd240f1c1e
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  LastFm: a624fa250bbda5950fccbd068ea7950dcba2da1f
   LLACircularProgressView: e179b0728217e9013cd07c2fadc7caa0c35b9199
-  MarqueeLabel: 6b8ff6915c0536c5099ac30992b7d72f9807df20
-  NAKPlaybackIndicatorView: 794dd97576fe074bb1844c19ebcbf7509384a47f
+  MarqueeLabel: 0c41f08ef5773e29c0f71064a8fa788a2fd8b365
+  NAKPlaybackIndicatorView: f1468937ae3828ef6e9a50feda0781fdfa67dce8
+  NapySlider: a40eaea29c155e0f6df4666279567de0bf1b9021
   NSObject-NSCoding: d05f937cc1ea1560294be261ee41d5438ddc7b1b
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
-  PSUpdateApp: 295919cdc1876f4d91911297c7e9f238aa732220
+  PSUpdateApp: 46100903d1eb4f6deb0726f31bf2e9645aa94b55
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDCloudUserDefaults: cacf733d192160d94364efab8548ae3302615a65
-  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  SVProgressHUD: 6e48a1dda09ce3b58adc41d013baed3a8e8980ff
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
-  TDBadgedCell: 8e5314066fd8c2d8b6e3fc5dec824f5ded78bdc5
-  Toast: 32c59229abfcf41850162b83bb9259dc84372473
-  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  TCBlobDownloadSwift: 09b99183c1c3368d0b7dd979443775348de8b3c5
+  TDBadgedCell: d5da3bfc4e3eb27a301f87b1af192917a8638a89
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   VTAcknowledgementsViewController: 6056f5f5e5ed995bbf0581bed6ddd29355ca9a80
 
-PODFILE CHECKSUM: 10034766541c436efe74826c513288a0a87a515b
+PODFILE CHECKSUM: 9f668f9cbda310001d15667061cd9cc760e8934e
 
-COCOAPODS: 1.0.0.beta.2
+COCOAPODS: 1.5.3
