@@ -10,6 +10,7 @@
 
 #import <FCFileManager/FCFileManager.h>
 #import <KVOController/FBKVOController.h>
+#import <TCBlobDownloadSwift/TCBlobDownloadSwift.h>
 #import "PHODPersistence.h"
 #import "AGQueue.h"
 

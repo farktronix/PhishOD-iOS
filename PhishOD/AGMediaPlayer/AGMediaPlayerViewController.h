@@ -24,8 +24,8 @@
 @property (strong, nonatomic) AGAudioPlayerUpNextQueue *queue;
 
 // an array of AGMediaItems
-@property (nonatomic, readonly) id<AGAudioItem> currentItem;
-@property (nonatomic, readonly) id<AGAudioItem> nextItem;
+@property (nonatomic, readonly) AGAudioItem * currentItem;
+@property (nonatomic, readonly) AGAudioItem * nextItem;
 @property (nonatomic, readonly) NSInteger nextIndex;
 
 @property (nonatomic) NSInteger currentIndex;
@@ -39,7 +39,7 @@
 @property (nonatomic) NSTimeInterval elapsed;
 @property (nonatomic, readonly) float duration;
 
-- (void)insertItem:(id<AGAudioItem>)item atIndex:(NSUInteger)index;
+- (void)insertItem:(AGAudioItem *)item atIndex:(NSUInteger)index;
 
 - (void)forward;
 - (void)play;

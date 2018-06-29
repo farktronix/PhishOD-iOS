@@ -16,4 +16,5 @@ profile
 DerivedData
 .idea/
 Pods/
+project.xcworkspace
 #PhishOD/Helpers/API keys.plist

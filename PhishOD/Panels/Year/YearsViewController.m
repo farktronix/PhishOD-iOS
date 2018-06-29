@@ -9,7 +9,6 @@
 #import "YearsViewController.h"
 #import "YearViewController.h"
 #import "SearchDelegate.h"
-#import "BadgeAndHeatmapCell.h"
 #import "PhishTracksStats.h"
 #import "PTSHeatmapQuery.h"
 #import "PTSHeatmap.h"

@@ -30,14 +30,14 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
-  - Crashlytics (3.10.2):
-    - Fabric (~> 1.7.7)
+  - Crashlytics (3.10.3):
+    - Fabric (~> 1.7.8)
   - CSNNotificationObserver (0.9.2)
   - DBGHTMLEntities (1.1.0)
   - DZNEmptyDataSet (1.8.1)
   - EDColor (1.0.1)
   - EGOCache (2.2.0)
-  - Fabric (1.7.7)
+  - Fabric (1.7.8)
   - FastImageCache (1.5.1)
   - FCFileManager (1.0.20)
   - Flurry-iOS-SDK (9.0.0):
@@ -73,7 +73,7 @@ PODS:
   - SVProgressHUD (2.2.5)
   - SVWebViewController (1.0)
   - TCBlobDownloadSwift (0.1.16)
-  - TDBadgedCell (5.3.1)
+  - TDBadgedCell (5.3.0)
   - Toast (4.0.0)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -118,7 +118,7 @@ DEPENDENCIES:
   - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
   - SVWebViewController
   - TCBlobDownloadSwift (from `https://github.com/farktronix/TCBlobDownloadSwift.git`)
-  - TDBadgedCell
+  - TDBadgedCell (from `https://github.com/tmdvs/TDBadgedCell.git`)
   - Toast
   - TTTAttributedLabel
   - UIActivityIndicator-for-SDWebImage
@@ -157,7 +157,6 @@ SPEC REPOS:
     - SDCloudUserDefaults
     - SDWebImage
     - SVWebViewController
-    - TDBadgedCell
     - Toast
     - TTTAttributedLabel
     - UIActivityIndicator-for-SDWebImage
@@ -185,6 +184,8 @@ EXTERNAL SOURCES:
     :git: https://github.com/SVProgressHUD/SVProgressHUD.git
   TCBlobDownloadSwift:
     :git: https://github.com/farktronix/TCBlobDownloadSwift.git
+  TDBadgedCell:
+    :git: https://github.com/tmdvs/TDBadgedCell.git
 
 CHECKOUT OPTIONS:
   AGAudioPlayer:
@@ -215,8 +216,11 @@ CHECKOUT OPTIONS:
     :commit: 12ef3375791136be10cc8685fa8074ec56a64491
     :git: https://github.com/SVProgressHUD/SVProgressHUD.git
   TCBlobDownloadSwift:
-    :commit: ee315f823332831d1c2ad6128fb1f4cdf7102a66
+    :commit: acbf158c1a38224973196d2f52171be43bceeeff
     :git: https://github.com/farktronix/TCBlobDownloadSwift.git
+  TDBadgedCell:
+    :commit: 65fe8f90eb6136b8e494d10724c1b36865ad7ba2
+    :git: https://github.com/tmdvs/TDBadgedCell.git
 
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
@@ -228,13 +232,13 @@ SPEC CHECKSUMS:
   BASSGaplessAudioPlayer: 5b074495769769192b720c70aa2a60f6f33751f3
   BCColor: 2425540cb0da92795b81a1f15b5289a92279c9eb
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
+  Crashlytics: 2aea305161a2122492698c75af27f2b98aa49a25
   CSNNotificationObserver: bf3a8781aba027abb16c2f5a63f1a7b1de044d49
   DBGHTMLEntities: e44329e98c0258ff89508c7915829a04fcfec1b0
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   EDColor: 91d127cd67d7c1d3862846fb11ef4b3851151bfa
   EGOCache: 191fd213da6804d487b49b1a91772ba904f3e324
-  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  Fabric: fba4684a95df789565b0b27fc5b6e68f1755af32
   FastImageCache: 2e7a6f677b15336eb3d1a4092a494676256c891d
   FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
   Flurry-iOS-SDK: 58e48e417fee667154e4d240040b270b3734d28a
@@ -260,12 +264,12 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
   TCBlobDownloadSwift: 5feedc57af8c115092b7703ac5b155e171f21a39
-  TDBadgedCell: d5da3bfc4e3eb27a301f87b1af192917a8638a89
+  TDBadgedCell: 39d7f7f07333f3daff4edf42b81897648c99410a
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   VTAcknowledgementsViewController: 6056f5f5e5ed995bbf0581bed6ddd29355ca9a80
 
-PODFILE CHECKSUM: 743cf7b761535d78ea524f6e676925daaef44ad4
+PODFILE CHECKSUM: 7cf67c6cb8216f0c8f7ff7a6ca942fb546e7cbac
 
 COCOAPODS: 1.5.3

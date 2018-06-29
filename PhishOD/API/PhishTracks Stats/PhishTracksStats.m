@@ -155,7 +155,7 @@ static PhishTracksStats *sharedPts;
 {
 	[self POST:@"sessions.json"
 	parameters:@{ @"login": username, @"password": password }
-	   success:^(AFHTTPRequestOperation *operation, id responseObject)
+	   success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {
 			 NSError *error = nil;
@@ -164,7 +164,7 @@ static PhishTracksStats *sharedPts;
 			 success();
 		 }
 	 }
-	   failure:^(AFHTTPRequestOperation *operation, NSError *error)
+	   failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self clearLocalSession];
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
@@ -176,7 +176,7 @@ static PhishTracksStats *sharedPts;
 {
 	[self POST:@"registrations.json"
 	parameters:@{ @"user": @{ @"username": username, @"email": email, @"password": password } }
-	   success:^(AFHTTPRequestOperation *operation, id responseObject)
+	   success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {
 			 NSError *error = nil;
@@ -185,7 +185,7 @@ static PhishTracksStats *sharedPts;
 			 success();
 		 }
 	 }
-	   failure:^(AFHTTPRequestOperation *operation, NSError *error)
+	   failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self clearLocalSession];
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
@@ -207,12 +207,12 @@ static PhishTracksStats *sharedPts;
 	
 	[self POST:@"plays.json"
 	parameters:params
-	   success:^(AFHTTPRequestOperation *operation, id responseObject)
+	   success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success)
 			 success();
 	 }
-	   failure:^(AFHTTPRequestOperation *operation, NSError *error)
+	   failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
 	 }];
@@ -228,7 +228,7 @@ static PhishTracksStats *sharedPts;
 	
 	[self POST:path
 	parameters:params
-	   success:^(AFHTTPRequestOperation *operation, id responseObject)
+	   success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {
 			 NSError *error = nil;
@@ -237,7 +237,7 @@ static PhishTracksStats *sharedPts;
 			 success(result);
 		 }
 	 }
-	   failure:^(AFHTTPRequestOperation *operation, NSError *error)
+	   failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
 	 }];
@@ -270,7 +270,7 @@ static PhishTracksStats *sharedPts;
 {
 	[self  GET:path
 	parameters:@{ @"limit": [NSNumber numberWithInteger:limit], @"offset": [NSNumber numberWithInteger:offset] }
-	   success:^(AFHTTPRequestOperation *operation, NSArray *playEvents)
+	   success:^(NSURLSessionTask *operation, NSArray *playEvents)
 	 {
 		 if (success) {
 			 playEvents = [playEvents map:^id(id object) {
@@ -280,7 +280,7 @@ static PhishTracksStats *sharedPts;
 			 success(playEvents);
 		 }
 	 }
-	   failure:^(AFHTTPRequestOperation *operation, NSError *error)
+	   failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
 	 }];
@@ -333,7 +333,7 @@ static PhishTracksStats *sharedPts;
 	
 	[self POST:@"plays/heatmaps.json"
 	parameters:[query asParams]
-	   success:^(AFHTTPRequestOperation *operation, id responseObject)
+	   success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {
 			 NSError *error = nil;
@@ -343,7 +343,7 @@ static PhishTracksStats *sharedPts;
 			 success(result);
 		 }
 	 }
-	   failure:^(AFHTTPRequestOperation *operation, NSError *error)
+	   failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
 	 }];
@@ -358,7 +358,7 @@ static PhishTracksStats *sharedPts;
 {
 	[self GET:[self nestedResourcePathWithUserId:userId resourcePath:path]
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject)
+	  success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {
 			 NSError *error = nil;
@@ -371,7 +371,7 @@ static PhishTracksStats *sharedPts;
 			 success(favorites);
 		 }
 	 }
-	  failure:^(AFHTTPRequestOperation *operation, NSError *error)
+	  failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
 	 }];
@@ -382,7 +382,7 @@ static PhishTracksStats *sharedPts;
 {
     [self POST:[self nestedResourcePathWithUserId:userId resourcePath:path]
 	parameters:[favorite asDictionary]
-	   success:^(AFHTTPRequestOperation *operation, id responseObject)
+	   success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {
 			 NSError *error = nil;
@@ -391,7 +391,7 @@ static PhishTracksStats *sharedPts;
 			 success(fav);
 		 }
 	 }
-	   failure:^(AFHTTPRequestOperation *operation, NSError *error)
+	   failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
 	 }];
@@ -402,12 +402,12 @@ static PhishTracksStats *sharedPts;
 {
 	[self DELETE:[self nestedResourcePathWithUserId:userId resourcePath:[NSString stringWithFormat:@"%@/%ld.json", resourceName, (long)favoriteId]]
 	  parameters:nil
-		 success:^(AFHTTPRequestOperation *operation, id responseObject)
+		 success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success)
 			 success();
 	 }
-		 failure:^(AFHTTPRequestOperation *operation, NSError *error)
+		 failure:^(NSURLSessionTask *operation, NSError *error)
 	 {
 		 [self handleRequestFailure:operation error:error failureCallback:failure];
 	 }];

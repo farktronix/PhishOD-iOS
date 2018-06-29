@@ -8,7 +8,6 @@
 
 #import "VenuesViewController.h"
 #import "VenueViewController.h"
-#import <TDBadgedCell/TDBadgedCell.h>
 
 #import "Value1SubtitleCell.h"
 
