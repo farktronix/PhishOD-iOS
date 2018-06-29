@@ -54,7 +54,7 @@
 }
 
 - (void)eras:(void (^)(NSArray *))success
-	 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+	 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
     __block NSArray *cachedYears = nil;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0L), ^{
         cachedYears = (NSArray *)[PHODPersistence.sharedInstance objectForKey:@"eras"];
@@ -66,7 +66,7 @@
 
     [self GET:@"eras"
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  NSMutableArray *arr = [NSMutableArray array];
 		  responseObject = [self parseJSON:responseObject][@"data"];
       
@@ -94,20 +94,20 @@
 
 -(void)playlistForSlug:(NSString *)slug
 			   success:(void ( ^ )( PhishinPlaylist *playlist ))success
-			   failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure {
+			   failure:(void ( ^ ) ( NSURLSessionTask *operation , NSError *error ))failure {
 	[self GET:[@"playlists/" stringByAppendingString:slug]
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, NSDictionary *res) {
+	  success:^(NSURLSessionTask *operation, NSDictionary *res) {
 		  success([PhishinPlaylist.alloc initWithDictionary:res[@"data"]]);
 	  }
 	  failure:failure];
 }
 
 - (void)curatedPlaylists:(void (^)(NSArray *))success
-                 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+                 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
     [self GET:@"https://s3.amazonaws.com/phishod/playlists.json"
    parameters:nil
-      success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+      success:^(NSURLSessionTask *operation, NSDictionary *responseObject) {
           success([responseObject[@"playlist_groups"] map:^id(NSDictionary *object) {
               return [PhishinPlaylistGroup.alloc initWithDictionary:object];
           }]);
@@ -116,7 +116,7 @@
 }
 
 - (void)years:(void (^)(NSArray *))success
-	  failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+	  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
     __block NSArray *cachedYears = nil;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0L), ^{
         cachedYears = (NSArray *)[PHODPersistence.sharedInstance objectForKey:@"phishin.years"];
@@ -128,7 +128,7 @@
     
 	[self GET:@"years"
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
           NSArray *arr = [responseObject[@"data"] map:^id(id object) {
@@ -150,7 +150,7 @@
 
 - (void)fullYear:(PhishinYear *)year
 		 success:(void (^)(PhishinYear *))success
-		 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+		 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	if (year && [year.year hasPrefix:@"Shows on "]) {
 		[self onThisDay:success
 				failure:failure];
@@ -170,7 +170,7 @@
 
     [self GET:[@"years/" stringByAppendingString:year.year]
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  PhishinYear *newYear = [[PhishinYear alloc] init];
@@ -189,13 +189,13 @@
 }
 
 - (void)onThisDay:(void (^)(PhishinYear *))success
-		  failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+		  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	NSDateComponents *c = [NSCalendar.currentCalendar components:NSCalendarUnitMonth | NSCalendarUnitDay
 														fromDate:NSDate.date];
 	
 	[self GET:[NSString stringWithFormat:@"shows-on-day-of-year/%02d-%02d", (int)c.month, (int)c.day]
    parameters:@{@"per_page": @99999, @"sort_attr": @"date"}
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  PhishinYear *newYear = [[PhishinYear alloc] init];
@@ -213,7 +213,7 @@
 
 - (void)fullShow:(PhishinShow *)show
 		 success:(void (^)(PhishinShow *))success
-		 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+		 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	NSString *path;
 	if(show.id) {
 		path = [@"shows/" stringByAppendingFormat:@"%d", show.id];
@@ -235,7 +235,7 @@
 	
 	[self GET:path
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  PhishinShow *show = [PhishinShow.alloc initWithDictionary:responseObject[@"data"]];
@@ -249,10 +249,10 @@
 }
 
 - (void)randomShow:(void (^)(PhishinShow *))success
-		   failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+		   failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"random-show"
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  success([[PhishinShow alloc] initWithDictionary:responseObject[@"data"]]);
@@ -262,10 +262,10 @@
 
 - (void)fullVenue:(PhishinVenue *)venue
 		  success:(void (^)(PhishinVenue *))success
-		  failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+		  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:[@"venues/" stringByAppendingFormat:@"%d", venue.id]
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  venue.show_dates = responseObject[@"data"][@"show_dates"];
@@ -277,10 +277,10 @@
 }
 
 - (void)songs:(void (^)(NSArray *))success
-	  failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+	  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"songs"
    parameters:@{@"per_page": @99999, @"sort_attr": @"title"}
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  success([responseObject[@"data"] map:^id(id object) {
@@ -291,10 +291,10 @@
 }
 
 - (void)venues:(void (^)(NSArray *))success
-	   failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+	   failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"venues"
    parameters:@{@"per_page": @9999, @"sort_attr": @"name"}
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  success([responseObject[@"data"] map:^id(id object) {
@@ -306,10 +306,10 @@
 
 - (void)fullSong:(PhishinSong *)song
 		 success:(void (^)(PhishinSong *))success
-		 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+		 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:[@"songs/" stringByAppendingFormat:@"%ld", (long)song.id]
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  success([[PhishinSong alloc] initWithDictionary:responseObject[@"data"]]);
@@ -318,10 +318,10 @@
 }
 
 - (void)tours:(void (^)(NSArray *))success
-	  failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+	  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"tours"
    parameters:@{@"per_page": @9999, @"sort_attr": @"starts_on"}
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  success([responseObject[@"data"] map:^id(id object) {
@@ -333,10 +333,10 @@
 
 - (void)fullTour:(PhishinTour *)tour
 		 success:(void (^)(PhishinTour *))success
-		 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+		 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:[@"tours/" stringByAppendingFormat:@"%d", tour.id]
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  success([[PhishinTour alloc] initWithDictionary:responseObject[@"data"]]);
@@ -346,10 +346,10 @@
 
 - (void)search:(NSString *)searchTerm
 	   success:(void (^)(PhishinSearchResults *))success
-	   failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+	   failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:[@"search/" stringByAppendingString: [searchTerm stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
 		  success([[PhishinSearchResults alloc] initWithDictionary:responseObject[@"data"]]);

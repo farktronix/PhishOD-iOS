@@ -213,7 +213,7 @@ typedef enum {
                                                                                        success:success
                                                                                        failure:failure];
                                  }
-                                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                 failure:^(NSURLSessionTask *operation, NSError *error) {
                                      [FailureHandler showErrorAlertWithMessage:error.localizedDescription];
                                  }];
         

@@ -113,29 +113,17 @@ static PhishTracksStats *sharedPts;
 #pragma mark -
 #pragma mark Response Handling
 
-- (void)handleRequestFailure:(AFHTTPRequestOperation *)operation error:(NSError *)error failureCallback:(void (^)(PhishTracksStatsError *))failure
+- (void)handleRequestFailure:(NSURLSessionTask *)operation error:(NSError *)error failureCallback:(void (^)(PhishTracksStatsError *))failure
 {
 	if (!failure)
 		return;
 	
 	PhishTracksStatsError *statsError = nil;
-	NSHTTPURLResponse *resp = operation.response;
+	NSHTTPURLResponse *resp = (NSHTTPURLResponse *)operation.response;
 	
 	if (resp) {
-		NSDictionary *responseDict = operation.responseObject;
-        
-        if (responseDict) {
-            statsError = [PhishTracksStatsError errorWithStatsErrorDictionary:responseDict httpStatus:resp.statusCode];
-            
-            if (statsError.apiErrorCode == kStatsSessionRequired)
-                [self clearLocalSession];
-			//            dbug(@"[stats] api error. http_status=%ld api_error_code=%ld api_message='%@'",
-			//                    (long)statsError.httpStatus, (long)statsError.apiErrorCode, statsError.apiErrorMessage);
-        }
-        else {
-            statsError = [PhishTracksStatsError errorWithError:[NSError errorWithDomain:@"PhishTracks Stats" code:kStatsErrorUnparsableBody
-																			   userInfo:@{ NSLocalizedDescriptionKey: @"Couldn't parse response body." }]];
-        }
+        statsError = [PhishTracksStatsError errorWithError:[NSError errorWithDomain:@"PhishTracks Stats" code:kStatsErrorUnparsableBody
+                                                                           userInfo:@{ NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Couldn't parse response body (status %ld)", (long)resp.statusCode] }]];
         dbug(@"[stats] api error. error=%@", statsError);
 	}
 	else {

@@ -53,8 +53,8 @@
 
 - (void)makeAPIRequest:(NSString *)method
 		 withArguments:(NSDictionary*)args
-			   success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success
-			   failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure {
+			   success:(void ( ^ ) ( NSURLSessionTask *operation , id responseObject ))success
+			   failure:(void ( ^ ) ( NSURLSessionTask *operation , NSError *error ))failure {
 	NSMutableDictionary *margs = [args ? args : @{} mutableCopy];
 	margs[@"api"] = @"2.0";
 	margs[@"method"] = method;
@@ -62,7 +62,7 @@
 	
 	[self GET:@"/api.json"
    parameters:margs
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  //			  dbug(@"%@", [[NSString alloc] initWithData:responseObject
 		  //												 encoding:NSUTF8StringEncoding]);
 		  responseObject = [NSJSONSerialization JSONObjectWithData:responseObject
@@ -74,10 +74,10 @@
 }
 
 - (void)topRatedShowsWithSuccess:(void (^)(NSArray *))success
-						 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+						 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"http://phish.net/ratings"
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  NSString *page = [[NSString alloc] initWithData:responseObject
 												 encoding:NSASCIIStringEncoding];
 		  NSArray *matches = [findTopRatings matchesInString:page
@@ -103,7 +103,7 @@
 			success:(void (^)(NSArray *))success {
 	[self GET:[NSString stringWithFormat:@"http://phish.net/jamcharts/song/%@", date.netSlug , nil]
    parameters:nil
-	  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  NSString *page = [[NSString alloc] initWithData:responseObject
 												 encoding:NSASCIIStringEncoding];
 		  
@@ -124,17 +124,17 @@
 			  success(res);
 		  }];
 	  }
-	  failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+	  failure:^(NSURLSessionTask *operation, NSError *error) {
 		  
 	  }];
 }
 
 -(void)setlistForDate:(NSString *)date
 			  success:(void (^)(PhishNetSetlist *setlist)) success
-			  failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+			  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self makeAPIRequest:@"pnet.shows.setlists.get"
 		   withArguments:@{@"showdate": date}
-				 success:^(AFHTTPRequestOperation *operation, id responseObject) {
+				 success:^(NSURLSessionTask *operation, id responseObject) {
 					 PhishNetSetlist *set = [[PhishNetSetlist alloc] initWithJSON:responseObject[((NSArray*)responseObject).count - 1]];
 					 
 					 [self reviewsForDate:date
@@ -143,7 +143,7 @@
 									  
 									  [self GET:@"http://phish.net/setlists/"
 									 parameters:@{@"showid": set.showId}
-										success:^(AFHTTPRequestOperation *operation, id responseObject) {
+										success:^(NSURLSessionTask *operation, id responseObject) {
 											NSString *page = [[NSString alloc] initWithData:responseObject
 																				   encoding:NSASCIIStringEncoding];
 											NSTextCheckingResult *match = [findRating firstMatchInString:page
@@ -172,10 +172,10 @@
 
 - (void)reviewsForDate:(NSString *)date
 			   success:(void (^)(NSArray *))success
-			   failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+			   failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self makeAPIRequest:@"pnet.reviews.query"
 		   withArguments:@{@"showdate": date}
-				 success:^(AFHTTPRequestOperation *operation, id responseObject) {
+				 success:^(NSURLSessionTask *operation, id responseObject) {
 					 if([responseObject isKindOfClass:[NSDictionary class]]) {
 						 success(@[]);
 						 return;
@@ -192,10 +192,10 @@
 }
 
 - (void)news:(void (^)(NSArray *))success
-	 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+	 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self makeAPIRequest:@"pnet.news.get"
 		   withArguments:nil
-				 success:^(AFHTTPRequestOperation *operation, NSArray *responseObject) {
+				 success:^(NSURLSessionTask *operation, NSArray *responseObject) {
 					 success([responseObject.reverse map:^id(NSDictionary *object) {
 						 NSError *err;
 						 
@@ -213,10 +213,10 @@
 }
 
 - (void)blog:(void (^)(NSArray *))success
-	 failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+	 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self makeAPIRequest:@"pnet.blog.get"
 		   withArguments:nil
-				 success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+				 success:^(NSURLSessionTask *operation, NSDictionary *responseObject) {
 					 success([[responseObject.allValues map:^id(NSDictionary *object) {
 						 NSError *err;
 						 
@@ -238,10 +238,10 @@
 }
 
 - (void)showsForCurrentUser:(void (^)(NSArray *))success
-					failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+					failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self makeAPIRequest:@"pnet.user.myshows.get"
 		   withArguments:@{@"username": PhishNetAuth.sharedInstance.username}
-				 success:^(AFHTTPRequestOperation *operation, NSArray *responseObject) {
+				 success:^(NSURLSessionTask *operation, NSArray *responseObject) {
 					 success([[responseObject reject:^BOOL(NSDictionary *object) {
 						 return ![object[@"artist"] isEqualToString:@"1"];
 					 }] map:^id(NSDictionary *object) {
@@ -263,10 +263,10 @@
 - (void)authorizeUsername:(NSString *)username
 			 withPassword:(NSString *)password
 				  success:(void (^)(BOOL, NSString *))success
-				  failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+				  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self makeAPIRequest:@"pnet.api.authorize"
 		   withArguments:@{@"username": username, @"passwd": password}
-				 success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+				 success:^(NSURLSessionTask *operation, NSDictionary *responseObject) {
 					 if ([responseObject[@"success"] boolValue]) {
 						 success(YES, responseObject[@"authkey"]);
 					 }

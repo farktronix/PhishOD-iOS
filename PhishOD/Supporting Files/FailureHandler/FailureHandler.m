@@ -11,8 +11,8 @@
 
 @implementation FailureHandler
 
-+ (void (^)(AFHTTPRequestOperation *, NSError *))returnCallback:(RefreshableTableViewController *)table {
-	return ^(AFHTTPRequestOperation *op, NSError *err) {
++ (void (^)(NSURLSessionTask *, NSError *))returnCallback:(RefreshableTableViewController *)table {
+	return ^(NSURLSessionTask *op, NSError *err) {
 		UIAlertView *a = [[UIAlertView alloc] initWithTitle:@"Error!"
 													message:[NSString stringWithFormat:@"%@\n\n%@", [err localizedDescription], err]
 												   delegate:nil

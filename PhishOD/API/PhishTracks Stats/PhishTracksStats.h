@@ -32,7 +32,7 @@ typedef enum {
 	kStatsParamMissing             = 14
 } StatsErrorCodes;
 
-@interface PhishTracksStats : AFHTTPRequestOperationManager
+@interface PhishTracksStats : AFHTTPSessionManager
 
 #pragma mark - Initializers
 

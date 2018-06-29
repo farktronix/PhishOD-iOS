@@ -11,7 +11,7 @@
 
 @interface FailureHandler : NSObject
 
-+(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error )) returnCallback:(UITableView *)table;
++(void ( ^ ) ( NSURLSessionTask *operation , NSError *error )) returnCallback:(UITableView *)table;
 
 + (void)showAlertWithStatsError:(PhishTracksStatsError *)statsError;
 + (void)showErrorAlertWithMessage:(NSString *)message;

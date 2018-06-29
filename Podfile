@@ -16,7 +16,7 @@ target "PhishOD" do
 	pod 'TTTAttributedLabel'
 	pod 'SVWebViewController'
 	pod 'Appirater'
-	pod 'LastFm'
+	pod 'LastFm', :git => 'https://github.com/dflateau/LastFm.git'
 	pod 'SVProgressHUD', :git => "https://github.com/SVProgressHUD/SVProgressHUD.git"
 	pod 'FXKeychain'
 	pod 'ObjectiveSugar'
@@ -40,6 +40,7 @@ target "PhishOD" do
 	pod 'NSObject-NSCoding', :git => 'https://github.com/alecgorge/NSObject-NSCoding.git', :branch => 'master'
 	pod 'DZNEmptyDataSet'
 	pod 'GroundControl', :git => 'https://github.com/gshahbazian/GroundControl.git'
+    pod 'NapySlider', :git => 'https://github.com/farktronix/NapySlider.git'
 	pod 'AGAudioPlayer', :git => 'https://github.com/farktronix/AGAudioPlayer.git'
 	pod 'Instabug', '~> 4.1'
 	pod 'Flurry-iOS-SDK'

@@ -20,7 +20,7 @@
 #define PHISH_NET_API_KEY IGThirdPartyKeys.sharedInstance.phishNetApiKey
 #define PHISH_NET_PUB_KEY IGThirdPartyKeys.sharedInstance.phishNetPubKey
 
-@interface PhishNetAPI : AFHTTPRequestOperationManager {
+@interface PhishNetAPI : AFHTTPSessionManager {
 	NSRegularExpression *findRating;
 	NSRegularExpression *findVotes;
 	NSRegularExpression *findTopRatings;
@@ -32,30 +32,30 @@
 
 -(void)setlistForDate:(NSString *)date
 			  success:(void ( ^ ) (PhishNetSetlist *))success
-			  failure:(void ( ^ ) ( AFHTTPRequestOperation *, NSError *))failure;
+			  failure:(void ( ^ ) ( NSURLSessionTask *, NSError *))failure;
 
 -(void)jamsForSong:(PhishinSong *)date
 		   success:(void ( ^ ) (NSArray *dates))success;
 
 -(void)reviewsForDate:(NSString *)date
 			  success:(void ( ^ ) (NSArray *))success
-			  failure:(void ( ^ ) ( AFHTTPRequestOperation *, NSError *))failure;
+			  failure:(void ( ^ ) ( NSURLSessionTask *, NSError *))failure;
 
 -(void)topRatedShowsWithSuccess:(void ( ^ ) (NSArray *))success
-						failure:(void ( ^ ) ( AFHTTPRequestOperation *, NSError *))failure;
+						failure:(void ( ^ ) ( NSURLSessionTask *, NSError *))failure;
 
 - (void)news:(void ( ^ ) (NSArray *))success
-	 failure:(void ( ^ ) ( AFHTTPRequestOperation *, NSError *))failure;
+	 failure:(void ( ^ ) ( NSURLSessionTask *, NSError *))failure;
 
 - (void)blog:(void ( ^ ) (NSArray *))success
-	 failure:(void ( ^ ) ( AFHTTPRequestOperation *, NSError *))failure;
+	 failure:(void ( ^ ) ( NSURLSessionTask *, NSError *))failure;
 
 - (void)showsForCurrentUser:(void ( ^ ) (NSArray *))success
-					failure:(void ( ^ ) ( AFHTTPRequestOperation *, NSError *))failure;
+					failure:(void ( ^ ) ( NSURLSessionTask *, NSError *))failure;
 
 - (void)authorizeUsername:(NSString *)username
 			 withPassword:(NSString *)password
 				  success:(void ( ^ ) (BOOL success, NSString *authkey))success
-				  failure:(void ( ^ ) ( AFHTTPRequestOperation *, NSError *))failure;
+				  failure:(void ( ^ ) ( NSURLSessionTask *, NSError *))failure;
 
 @end

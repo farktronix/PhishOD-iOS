@@ -69,7 +69,7 @@ static NSString *kPhishNetAuthKeyKeychainKey = @"pnet_authkey";
 											 FXKeychain.defaultKeychain[kPhishNetAuthKeyKeychainKey] = token;
 										 }
 									 }
-									 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+									 failure:^(NSURLSessionTask *operation, NSError *error) {
 										 result(NO);
 										 
 										 UIAlertView *a = [UIAlertView.alloc initWithTitle:@"Phish.net Error"
