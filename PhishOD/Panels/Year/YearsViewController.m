@@ -110,11 +110,11 @@ titleForHeaderInSection:(NSInteger)section {
 - (UITableViewCell *)tableView:(UITableView *)tableView
 		 cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
-    BadgeAndHeatmapCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    TDBadgedCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
 	if(cell == nil) {
-		cell = [[BadgeAndHeatmapCell alloc] initWithStyle:UITableViewCellStyleDefault
-									  reuseIdentifier:CellIdentifier];
+		cell = [[TDBadgedCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                   reuseIdentifier:CellIdentifier];
 	}
 	
 	PhishinEra *era = self.eras[indexPath.section];
@@ -125,11 +125,11 @@ titleForHeaderInSection:(NSInteger)section {
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-	BadgeAndHeatmapCell *scell = (BadgeAndHeatmapCell *)cell;
-	PhishinEra *era = self.eras[indexPath.section];
-	PhishinYear *year = ((PhishinYear*)era.years[indexPath.row]);
-	float heatmapValue = [_yearsHeatmap floatValueForKey:year.year];
-	[scell updateHeatmapLabelWithValue:heatmapValue];
+//    TDBadgedCell *scell = (TDBadgedCell *)cell;
+//    PhishinEra *era = self.eras[indexPath.section];
+//    PhishinYear *year = ((PhishinYear*)era.years[indexPath.row]);
+//    float heatmapValue = [_yearsHeatmap floatValueForKey:year.year];
+//    [scell updateHeatmapLabelWithValue:heatmapValue];
 }
 
 #pragma mark - Table view delegate

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B6BB94240A47C26E38CAD0E /* libPods-PhishOD-Relisten.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA955E6EBA915093AE0B5C5 /* libPods-PhishOD-Relisten.a */; };
-		4336897320E6B3E2009F2023 /* BadgeAndHeatmapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336897220E6B3E2009F2023 /* BadgeAndHeatmapCell.swift */; };
+		4949A9E0751B2287F82178EC /* libPods-PhishOD-Relisten.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A04CA3B0F4201F501CA1032 /* libPods-PhishOD-Relisten.a */; };
 		5EA5C9921BEAB63000DFD833 /* reorder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA5C9911BEAB63000DFD833 /* reorder@2x.png */; };
 		5EA5C9961BEAB6D400DFD833 /* reorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA5C9951BEAB6D400DFD833 /* reorder.png */; };
 		5EBE3B8D1C1ACD1100986EFD /* RLPushPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE3B8C1C1ACD1100986EFD /* RLPushPopAnimator.m */; };
@@ -406,7 +405,6 @@
 		7CEE68091BD9EB0700AAFCE6 /* DTParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFFE1B91BCBFF6B00FBB3AB /* DTParallaxHeaderView.m */; };
 		7CFFE1BD1BCBFF6B00FBB3AB /* DTParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFFE1B91BCBFF6B00FBB3AB /* DTParallaxHeaderView.m */; };
 		7CFFE1BE1BCBFF6B00FBB3AB /* DTParallaxTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFFE1BB1BCBFF6B00FBB3AB /* DTParallaxTableView.m */; };
-		AC3608FB61CDEF196711B4EC /* libPods-PhishOD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9148E9A7D9272771067CA37E /* libPods-PhishOD.a */; };
 		C56C2B5319F04A11004F5637 /* PTSHeatmapQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C56C2B5219F04A11004F5637 /* PTSHeatmapQuery.m */; };
 		C56C2B5619F05979004F5637 /* PTSHeatmap.m in Sources */ = {isa = PBXBuildFile; fileRef = C56C2B5519F05979004F5637 /* PTSHeatmap.m */; };
 		C582FD1818417D860000E8CD /* PhishTracksStatsFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = C582FD1718417D860000E8CD /* PhishTracksStatsFavorite.m */; };
@@ -419,6 +417,7 @@
 		C5E62D32183E46F400A84114 /* PhishTracksStatsPlayEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E62D31183E46F400A84114 /* PhishTracksStatsPlayEvent.m */; };
 		C5FB5F6A18387F4B004AAB91 /* StatsNewSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FB5F6918387F4B004AAB91 /* StatsNewSessionViewController.m */; };
 		C5FB5F6D1838804F004AAB91 /* StatsRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FB5F6C1838804F004AAB91 /* StatsRegistrationViewController.m */; };
+		EDF9D47B91EE25965368F5D2 /* libPods-PhishOD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A46ADB56799EE759345BFB5F /* libPods-PhishOD.a */; };
 		F1B48AE61973813100DDF5C3 /* VenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B48AE31973813100DDF5C3 /* VenuesViewController.m */; };
 		F1B48AE71973813100DDF5C3 /* VenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B48AE51973813100DDF5C3 /* VenueViewController.m */; };
 		F1B48AEA1973828F00DDF5C3 /* RandomShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B48AE91973828F00DDF5C3 /* RandomShowViewController.m */; };
@@ -489,16 +488,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F73EE3FDB8700D2F8EC21B7 /* Pods-PhishOD-Relisten.snapshot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD-Relisten.snapshot.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten.snapshot.xcconfig"; sourceTree = "<group>"; };
-		3B3572D78715DB8BF25DCE70 /* Pods-PhishOD-Relisten.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD-Relisten.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten.release.xcconfig"; sourceTree = "<group>"; };
+		3EB711E4448ECD4F13C51BFB /* Pods-PhishOD.snapshot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD.snapshot.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD.snapshot.xcconfig"; sourceTree = "<group>"; };
 		4336897220E6B3E2009F2023 /* BadgeAndHeatmapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeAndHeatmapCell.swift; sourceTree = "<group>"; };
 		4336897420E6B905009F2023 /* PhishOD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhishOD-Bridging-Header.h"; sourceTree = "<group>"; };
+		52D676F3F6FE7C520D082138 /* Pods-PhishOD-Relisten.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD-Relisten.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten.adhoc.xcconfig"; sourceTree = "<group>"; };
 		5EA5C9911BEAB63000DFD833 /* reorder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reorder@2x.png"; sourceTree = "<group>"; };
 		5EA5C9951BEAB6D400DFD833 /* reorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reorder.png; sourceTree = "<group>"; };
 		5EBE3B8B1C1ACD1100986EFD /* RLPushPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLPushPopAnimator.h; sourceTree = "<group>"; };
 		5EBE3B8C1C1ACD1100986EFD /* RLPushPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLPushPopAnimator.m; sourceTree = "<group>"; };
-		5F3992771CCC08F760CB808A /* Pods-PhishOD-Relisten.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD-Relisten.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten.debug.xcconfig"; sourceTree = "<group>"; };
-		705AEC9474B3DD5EB5D01E72 /* Pods-PhishOD.snapshot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD.snapshot.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD.snapshot.xcconfig"; sourceTree = "<group>"; };
+		6A04CA3B0F4201F501CA1032 /* libPods-PhishOD-Relisten.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhishOD-Relisten.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C0623F0198BFAEF002D31E5 /* PhishinDownloadedShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhishinDownloadedShowsViewController.h; sourceTree = "<group>"; };
 		7C0623F1198BFAEF002D31E5 /* PhishinDownloadedShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhishinDownloadedShowsViewController.m; sourceTree = "<group>"; };
 		7C0623F3198C2AEC002D31E5 /* DownloadQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadQueueViewController.h; sourceTree = "<group>"; };
@@ -834,11 +832,10 @@
 		7CFFE1BA1BCBFF6B00FBB3AB /* DTParallaxTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTParallaxTableView.h; sourceTree = "<group>"; };
 		7CFFE1BB1BCBFF6B00FBB3AB /* DTParallaxTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTParallaxTableView.m; sourceTree = "<group>"; };
 		7CFFE1BC1BCBFF6B00FBB3AB /* DTTableViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTableViewConstants.h; sourceTree = "<group>"; };
-		7EA955E6EBA915093AE0B5C5 /* libPods-PhishOD-Relisten.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhishOD-Relisten.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9148E9A7D9272771067CA37E /* libPods-PhishOD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhishOD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97ED029443269256F1F21435 /* Pods-PhishOD.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD.adhoc.xcconfig"; sourceTree = "<group>"; };
-		AFF0634C14F8DE1B8B1F1C30 /* Pods-PhishOD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD.release.xcconfig"; sourceTree = "<group>"; };
-		C315BD7AE6736F58E04FE8E9 /* Pods-PhishOD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD.debug.xcconfig"; sourceTree = "<group>"; };
+		7DEFD3F0FC6A9E1F1689EF3A /* Pods-PhishOD-Relisten.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD-Relisten.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten.release.xcconfig"; sourceTree = "<group>"; };
+		A46ADB56799EE759345BFB5F /* libPods-PhishOD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhishOD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BCE4A1FFDD06B25E6EDB59 /* Pods-PhishOD.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD.adhoc.xcconfig"; sourceTree = "<group>"; };
+		BE5484E53E2B21DAE74E03AD /* Pods-PhishOD-Relisten.snapshot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD-Relisten.snapshot.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten.snapshot.xcconfig"; sourceTree = "<group>"; };
 		C56C2B5119F04A11004F5637 /* PTSHeatmapQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSHeatmapQuery.h; sourceTree = "<group>"; };
 		C56C2B5219F04A11004F5637 /* PTSHeatmapQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSHeatmapQuery.m; sourceTree = "<group>"; };
 		C56C2B5419F05979004F5637 /* PTSHeatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSHeatmap.h; sourceTree = "<group>"; };
@@ -862,7 +859,9 @@
 		C5FB5F6918387F4B004AAB91 /* StatsNewSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsNewSessionViewController.m; sourceTree = "<group>"; };
 		C5FB5F6B1838804F004AAB91 /* StatsRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsRegistrationViewController.h; sourceTree = "<group>"; };
 		C5FB5F6C1838804F004AAB91 /* StatsRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsRegistrationViewController.m; sourceTree = "<group>"; };
-		F0F634C765A558D3E6E0EBD7 /* Pods-PhishOD-Relisten.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD-Relisten.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten.adhoc.xcconfig"; sourceTree = "<group>"; };
+		D14F86E237F7A458456BDBBE /* Pods-PhishOD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD.release.xcconfig"; sourceTree = "<group>"; };
+		D3B405F296070ECAD949681D /* Pods-PhishOD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD/Pods-PhishOD.debug.xcconfig"; sourceTree = "<group>"; };
+		F1496CD86E244B53AED879BA /* Pods-PhishOD-Relisten.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhishOD-Relisten.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten.debug.xcconfig"; sourceTree = "<group>"; };
 		F1B48AE21973813100DDF5C3 /* VenuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesViewController.h; sourceTree = "<group>"; };
 		F1B48AE31973813100DDF5C3 /* VenuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesViewController.m; sourceTree = "<group>"; };
 		F1B48AE41973813100DDF5C3 /* VenueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueViewController.h; sourceTree = "<group>"; };
@@ -955,7 +954,7 @@
 				7C10A84D1B33B51700692DD3 /* UIKit.framework in Frameworks */,
 				7C10A84E1B33B51700692DD3 /* Foundation.framework in Frameworks */,
 				7C10A84F1B33B51700692DD3 /* CoreGraphics.framework in Frameworks */,
-				3B6BB94240A47C26E38CAD0E /* libPods-PhishOD-Relisten.a in Frameworks */,
+				4949A9E0751B2287F82178EC /* libPods-PhishOD-Relisten.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -984,7 +983,7 @@
 				7C518C05175D0C32005EB2E7 /* UIKit.framework in Frameworks */,
 				7C518C07175D0C32005EB2E7 /* Foundation.framework in Frameworks */,
 				7C518C09175D0C32005EB2E7 /* CoreGraphics.framework in Frameworks */,
-				AC3608FB61CDEF196711B4EC /* libPods-PhishOD.a in Frameworks */,
+				EDF9D47B91EE25965368F5D2 /* libPods-PhishOD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1394,8 +1393,8 @@
 				7C518C04175D0C32005EB2E7 /* UIKit.framework */,
 				7C518C06175D0C32005EB2E7 /* Foundation.framework */,
 				7C518C08175D0C32005EB2E7 /* CoreGraphics.framework */,
-				9148E9A7D9272771067CA37E /* libPods-PhishOD.a */,
-				7EA955E6EBA915093AE0B5C5 /* libPods-PhishOD-Relisten.a */,
+				A46ADB56799EE759345BFB5F /* libPods-PhishOD.a */,
+				6A04CA3B0F4201F501CA1032 /* libPods-PhishOD-Relisten.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1924,14 +1923,14 @@
 			isa = PBXGroup;
 			children = (
 				7CE27F9F1B5C5B2D00507C77 /* Pods-PhishOD-Relisten-acknowledgements.plist */,
-				C315BD7AE6736F58E04FE8E9 /* Pods-PhishOD.debug.xcconfig */,
-				705AEC9474B3DD5EB5D01E72 /* Pods-PhishOD.snapshot.xcconfig */,
-				AFF0634C14F8DE1B8B1F1C30 /* Pods-PhishOD.release.xcconfig */,
-				97ED029443269256F1F21435 /* Pods-PhishOD.adhoc.xcconfig */,
-				5F3992771CCC08F760CB808A /* Pods-PhishOD-Relisten.debug.xcconfig */,
-				2F73EE3FDB8700D2F8EC21B7 /* Pods-PhishOD-Relisten.snapshot.xcconfig */,
-				3B3572D78715DB8BF25DCE70 /* Pods-PhishOD-Relisten.release.xcconfig */,
-				F0F634C765A558D3E6E0EBD7 /* Pods-PhishOD-Relisten.adhoc.xcconfig */,
+				D3B405F296070ECAD949681D /* Pods-PhishOD.debug.xcconfig */,
+				3EB711E4448ECD4F13C51BFB /* Pods-PhishOD.snapshot.xcconfig */,
+				D14F86E237F7A458456BDBBE /* Pods-PhishOD.release.xcconfig */,
+				B0BCE4A1FFDD06B25E6EDB59 /* Pods-PhishOD.adhoc.xcconfig */,
+				F1496CD86E244B53AED879BA /* Pods-PhishOD-Relisten.debug.xcconfig */,
+				BE5484E53E2B21DAE74E03AD /* Pods-PhishOD-Relisten.snapshot.xcconfig */,
+				7DEFD3F0FC6A9E1F1689EF3A /* Pods-PhishOD-Relisten.release.xcconfig */,
+				52D676F3F6FE7C520D082138 /* Pods-PhishOD-Relisten.adhoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -2010,13 +2009,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C10A8821B33B51700692DD3 /* Build configuration list for PBXNativeTarget "Relisten" */;
 			buildPhases = (
-				B75CCF315746179AC5D8E956 /* [CP] Check Pods Manifest.lock */,
+				79A163F4945343D38A848140 /* [CP] Check Pods Manifest.lock */,
 				7C10A7BE1B33B51700692DD3 /* Sources */,
 				7C10A8401B33B51700692DD3 /* Frameworks */,
 				7C10A8511B33B51700692DD3 /* Resources */,
 				7C10A8801B33B51700692DD3 /* ShellScript */,
 				7CA833861C5BCC0B00B5DFA9 /* CopyFiles */,
-				426A7C96811782F292CD2B21 /* [CP] Copy Pods Resources */,
+				896A1E95DE470C119964C539 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2049,13 +2048,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C518C1E175D0C32005EB2E7 /* Build configuration list for PBXNativeTarget "PhishOD" */;
 			buildPhases = (
-				931F73C624FB9CA9E35BB1F5 /* [CP] Check Pods Manifest.lock */,
+				E55487B9081EBD25A8DE33CB /* [CP] Check Pods Manifest.lock */,
 				7C518BFD175D0C32005EB2E7 /* Sources */,
 				7C518BFE175D0C32005EB2E7 /* Frameworks */,
 				7C518BFF175D0C32005EB2E7 /* Resources */,
 				C5167BCE19F03C9600E11AB7 /* ShellScript */,
 				7CA833821C5BCBFA00B5DFA9 /* CopyFiles */,
-				B77C1EB226AD5352373820DB /* [CP] Copy Pods Resources */,
+				8A4EB495C87CAE452E0B8C05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2252,7 +2251,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		426A7C96811782F292CD2B21 /* [CP] Copy Pods Resources */ = {
+		79A163F4945343D38A848140 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhishOD-Relisten-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C10A8801B33B51700692DD3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/Fabric/Fabric.framework/run bbdd6a4df81e6b1498130a0f1fbf72d14e334fb4 6f395bff041601bfd84d45d401450dfb7addb425c9c245ae6a0b3df6e0022cc4";
+		};
+		896A1E95DE470C119964C539 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2314,56 +2344,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhishOD-Relisten/Pods-PhishOD-Relisten-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C10A8801B33B51700692DD3 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Pods/Fabric/Fabric.framework/run bbdd6a4df81e6b1498130a0f1fbf72d14e334fb4 6f395bff041601bfd84d45d401450dfb7addb425c9c245ae6a0b3df6e0022cc4";
-		};
-		931F73C624FB9CA9E35BB1F5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PhishOD-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B75CCF315746179AC5D8E956 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PhishOD-Relisten-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B77C1EB226AD5352373820DB /* [CP] Copy Pods Resources */ = {
+		8A4EB495C87CAE452E0B8C05 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2437,6 +2418,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# ---------------------------- IMPORTANT ----------------------------\n# You must set RESTServer to something like 'Set by build script' in the file\n# file '<Project Name>-Info.plist' in the 'Supporting Files' group\n# -------------------------------------------------------------------\n#\n# determin server based on user name\n#\n\nSERVER=${STATS_SERVER}\n\n# Only use developer servers for debug never for release\nif [ \"$CONFIGURATION\" != \"Debug\" ] ; then\n    exit\nfi\n\nif [ \"$USER\" == \"bird\" ] ; then\n    SERVER=\"http://localhost:5000/api/v2/\"\nfi\n\necho $SERVER\n\n#\n# Set the server info in plist file in the build product not the source tree\n#\n/usr/libexec/PlistBuddy -c \"Set :StatsServer $SERVER\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
+		};
+		E55487B9081EBD25A8DE33CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhishOD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2734,7 +2733,6 @@
 				7C518C73175E6465005EB2E7 /* LongStringViewController.m in Sources */,
 				7C518C76175FD224005EB2E7 /* ReviewsViewController.m in Sources */,
 				7C27BA741992DAAE00E5AEAE /* PlaylistViewController.m in Sources */,
-				4336897320E6B3E2009F2023 /* BadgeAndHeatmapCell.swift in Sources */,
 				7C94367B19885A2100AFEA56 /* PhishNetBlogItem.m in Sources */,
 				7CDDA3A11B0457A000C88DE2 /* PHODMusicTabTableViewController.m in Sources */,
 				7CE27F9E1B5C4B7200507C77 /* JSONValueTransformer+NSDateFromNSStringMilliseconds.m in Sources */,
@@ -2807,7 +2805,7 @@
 /* Begin XCBuildConfiguration section */
 		7C10A8831B33B51700692DD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F3992771CCC08F760CB808A /* Pods-PhishOD-Relisten.debug.xcconfig */;
+			baseConfigurationReference = F1496CD86E244B53AED879BA /* Pods-PhishOD-Relisten.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_CONFIGURATION = Debug;
@@ -2842,7 +2840,7 @@
 		};
 		7C10A8841B33B51700692DD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B3572D78715DB8BF25DCE70 /* Pods-PhishOD-Relisten.release.xcconfig */;
+			baseConfigurationReference = 7DEFD3F0FC6A9E1F1689EF3A /* Pods-PhishOD-Relisten.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_CONFIGURATION = Release;
@@ -2876,7 +2874,7 @@
 		};
 		7C10A8851B33B51700692DD3 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0F634C765A558D3E6E0EBD7 /* Pods-PhishOD-Relisten.adhoc.xcconfig */;
+			baseConfigurationReference = 52D676F3F6FE7C520D082138 /* Pods-PhishOD-Relisten.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_CONFIGURATION = Adhoc;
@@ -2948,7 +2946,7 @@
 		};
 		7C2988CE1BDA7D3F003D6B65 /* Snapshot */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 705AEC9474B3DD5EB5D01E72 /* Pods-PhishOD.snapshot.xcconfig */;
+			baseConfigurationReference = 3EB711E4448ECD4F13C51BFB /* Pods-PhishOD.snapshot.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_CONFIGURATION = Debug;
@@ -2991,7 +2989,7 @@
 		};
 		7C2988CF1BDA7D3F003D6B65 /* Snapshot */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F73EE3FDB8700D2F8EC21B7 /* Pods-PhishOD-Relisten.snapshot.xcconfig */;
+			baseConfigurationReference = BE5484E53E2B21DAE74E03AD /* Pods-PhishOD-Relisten.snapshot.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_CONFIGURATION = Debug;
@@ -3218,7 +3216,7 @@
 		};
 		7C518C1F175D0C32005EB2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C315BD7AE6736F58E04FE8E9 /* Pods-PhishOD.debug.xcconfig */;
+			baseConfigurationReference = D3B405F296070ECAD949681D /* Pods-PhishOD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_CONFIGURATION = Debug;
@@ -3261,7 +3259,7 @@
 		};
 		7C518C20175D0C32005EB2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFF0634C14F8DE1B8B1F1C30 /* Pods-PhishOD.release.xcconfig */;
+			baseConfigurationReference = D14F86E237F7A458456BDBBE /* Pods-PhishOD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_CONFIGURATION = Release;
@@ -3334,7 +3332,7 @@
 		};
 		7C8BF73E192D2517006ABDE8 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97ED029443269256F1F21435 /* Pods-PhishOD.adhoc.xcconfig */;
+			baseConfigurationReference = B0BCE4A1FFDD06B25E6EDB59 /* Pods-PhishOD.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_CONFIGURATION = Adhoc;

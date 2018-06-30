@@ -9,12 +9,11 @@
 #import "ToursViewController.h"
 
 #import "TourViewController.h"
-#import "BadgeAndHeatmapCell.h"
 #import "PhishTracksStats.h"
 #import "PTSHeatmapQuery.h"
 #import "PTSHeatmap.h"
 
-//#import <TDBadgedCell/TDBadgedCell.h>
+#import <TDBadgedCell/TDBadgedCell.h>
 
 @implementation ToursViewController {
 	PTSHeatmap *_toursHeatmap;
@@ -63,12 +62,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
 		 cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//	TDBadgedCell *cell = (TDBadgedCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
-	BadgeAndHeatmapCell *cell = (BadgeAndHeatmapCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
+	TDBadgedCell *cell = (TDBadgedCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
 	
 	if(!cell) {
-		cell = [[BadgeAndHeatmapCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-								   reuseIdentifier:@"Cell"];
+		cell = [[TDBadgedCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                   reuseIdentifier:@"Cell"];
 	}
 	
 	PhishinTour *tour = self.tours[indexPath.row];
@@ -98,7 +96,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-	BadgeAndHeatmapCell *scell = (BadgeAndHeatmapCell *)cell;
+	TDBadgedCell *scell = (TDBadgedCell *)cell;
 	PhishinTour *tour = self.tours[indexPath.row];
 	float heatmapValue = [_toursHeatmap floatValueForKey:tour.slug];
 	[scell updateHeatmapLabelWithValue:heatmapValue];

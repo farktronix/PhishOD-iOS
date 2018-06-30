@@ -73,7 +73,7 @@ PODS:
   - SVProgressHUD (2.2.5)
   - SVWebViewController (1.0)
   - TCBlobDownloadSwift (0.1.16)
-  - TDBadgedCell (5.3.0)
+  - TDBadgedCell (5.3.1)
   - Toast (4.0.0)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -118,7 +118,7 @@ DEPENDENCIES:
   - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
   - SVWebViewController
   - TCBlobDownloadSwift (from `https://github.com/farktronix/TCBlobDownloadSwift.git`)
-  - TDBadgedCell (from `https://github.com/tmdvs/TDBadgedCell.git`)
+  - TDBadgedCell
   - Toast
   - TTTAttributedLabel
   - UIActivityIndicator-for-SDWebImage
@@ -157,6 +157,7 @@ SPEC REPOS:
     - SDCloudUserDefaults
     - SDWebImage
     - SVWebViewController
+    - TDBadgedCell
     - Toast
     - TTTAttributedLabel
     - UIActivityIndicator-for-SDWebImage
@@ -184,8 +185,6 @@ EXTERNAL SOURCES:
     :git: https://github.com/SVProgressHUD/SVProgressHUD.git
   TCBlobDownloadSwift:
     :git: https://github.com/farktronix/TCBlobDownloadSwift.git
-  TDBadgedCell:
-    :git: https://github.com/tmdvs/TDBadgedCell.git
 
 CHECKOUT OPTIONS:
   AGAudioPlayer:
@@ -218,9 +217,6 @@ CHECKOUT OPTIONS:
   TCBlobDownloadSwift:
     :commit: acbf158c1a38224973196d2f52171be43bceeeff
     :git: https://github.com/farktronix/TCBlobDownloadSwift.git
-  TDBadgedCell:
-    :commit: 65fe8f90eb6136b8e494d10724c1b36865ad7ba2
-    :git: https://github.com/tmdvs/TDBadgedCell.git
 
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
@@ -264,12 +260,12 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
   TCBlobDownloadSwift: 5feedc57af8c115092b7703ac5b155e171f21a39
-  TDBadgedCell: 39d7f7f07333f3daff4edf42b81897648c99410a
+  TDBadgedCell: d5da3bfc4e3eb27a301f87b1af192917a8638a89
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   VTAcknowledgementsViewController: 6056f5f5e5ed995bbf0581bed6ddd29355ca9a80
 
-PODFILE CHECKSUM: 7cf67c6cb8216f0c8f7ff7a6ca942fb546e7cbac
+PODFILE CHECKSUM: fa8a43acc5a1f290b7fd247e42e6de019a7f7a0b
 
 COCOAPODS: 1.5.3
