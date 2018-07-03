@@ -89,7 +89,9 @@
         [c.sharedCache retrieveImageForEntity:self
                                withFormatName:PHODImageFormatFull
                               completionBlock:^(id<FICEntity> entity, NSString *formatName, UIImage *image) {
-                                  _artwork = [MPMediaItemArtwork.alloc initWithImage:image];
+                                  _artwork = [MPMediaItemArtwork.alloc initWithBoundsSize:image.size requestHandler:^UIImage * _Nonnull(CGSize size) {
+                                      return image;
+                                  }];
                               }];
     }
     

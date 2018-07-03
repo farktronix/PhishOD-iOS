@@ -44,7 +44,7 @@
 @property (nonatomic, strong) NSString<Optional> *taper;
 @property (nonatomic, strong) NSString<Optional> *showDescription;
 
-@property (nonatomic, strong) NSArray<Optional, ConvertOnDemand, IGShowReview> *reviews;
+@property (nonatomic, strong) NSArray<Optional, IGShowReview> *reviews;
 @property (nonatomic, strong) NSNumber<Optional> *trackCount;
 
 @property (nonatomic, strong) NSArray<Optional, IGTrack> *tracks;

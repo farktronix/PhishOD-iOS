@@ -23,7 +23,6 @@
 		439318DA20EAF5C3005F6583 /* RLShowCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10A8B11B42457B00692DD3 /* RLShowCollectionViewController.m */; };
 		439318DB20EAF5C3005F6583 /* RLHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3578291B5AC60900329368 /* RLHistoryViewController.m */; };
 		439318DC20EAF5C3005F6583 /* RLArtistTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C12F76F1C4AD047006FA021 /* RLArtistTodayViewController.m */; };
-		439318DD20EAF5C3005F6583 /* RLArtistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36A7341B347B2E0004E766 /* RLArtistsTableViewController.m */; };
 		439318DE20EAF5C3005F6583 /* RLPushPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE3B8C1C1ACD1100986EFD /* RLPushPopAnimator.m */; };
 		439318DF20EAF5C3005F6583 /* RLArtistTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36A7381B3486BF0004E766 /* RLArtistTabViewController.m */; };
 		439318E020EAF5C3005F6583 /* RLSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C35781E1B58B32F00329368 /* RLSettingsViewController.m */; };
@@ -2652,7 +2651,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1B48B53197383E000DDF5C3 /* FavoriteTracksViewController.m in Sources */,
-				439318DD20EAF5C3005F6583 /* RLArtistsTableViewController.m in Sources */,
 				F1B48B50197383E000DDF5C3 /* FavoriteShowsViewController.m in Sources */,
 				F1B48B0B1973831A00DDF5C3 /* TourRankingTableViewCell.m in Sources */,
 				C5E62D2D183DA14F00A84114 /* PhishTracksStatsStat.m in Sources */,

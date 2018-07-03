@@ -369,7 +369,7 @@
 }
 
 - (void)updateHeatmapLabelWithValue:(float)val {
-	self.heatmapView.hidden = val < 0.6 || ![[NSUserDefaults standardUserDefaults] boolForKey:@"heatmaps.enabled"];
+	self.heatmapView.hidden = ![[NSUserDefaults standardUserDefaults] boolForKey:@"heatmaps.enabled"];
 	// with hue=48, we get the same color as the ratings stars
 	CGFloat max_height = self.heatmapView.frame.size.height;
 	self.heatmapValueHeight.constant = max_height * val;
