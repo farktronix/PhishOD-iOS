@@ -16,6 +16,9 @@
 #import "RLArtistTabViewController.h"
 #import "RLArtistTodayViewController.h"
 #import "AppDelegate.h"
+#ifdef IS_PHISH
+#import "PHODTabbedHomeViewController.h"
+#endif
 
 #import "IGShowCell.h"
 

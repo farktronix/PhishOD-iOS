@@ -101,7 +101,7 @@
     return self.iguanaTrack.isDownloadingOrQueued;
 }
 
-- (void)loadMetadata:(void (^)(id<AGAudioItem>))metadataCallback {
+- (void)loadMetadata:(void (^)(AGAudioItem *))metadataCallback {
     metadataCallback(self);
 }
 

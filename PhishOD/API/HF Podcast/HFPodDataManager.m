@@ -61,6 +61,7 @@ static NSDateFormatter *hfPodDateFormatter;
     
     [manager GET:[hfPodDataUrl absoluteString]
       parameters:nil
+        progress:nil
          success:^(NSURLSessionDataTask *task, id responseObject) {
              NSArray *entry = responseObject[@"feed"][@"entry"];
              

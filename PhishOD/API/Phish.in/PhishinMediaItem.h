@@ -12,7 +12,7 @@
 
 #import <AGAudioPlayer/AGAudioItem.h>
 
-@interface PhishinMediaItem : AGAudioItemBase<PHODGenericTrack>
+@interface PhishinMediaItem : AGAudioItem<PHODGenericTrack>
 
 - (instancetype)initWithTrack:(PhishinTrack*) track
 					   inShow:(PhishinShow *) show;

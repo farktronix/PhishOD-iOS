@@ -31,6 +31,8 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <AFNetworkActivityLogger/AFNetworkActivityLogger.h>
+#import <AFNetworkActivityLogger/AFNetworkActivityConsoleLogger.h>
+#import <AFNetworkActivityLogger/AFNetworkActivityLoggerProtocol.h>
 #import <AFNetworking/AFNetworkReachabilityManager.h>
 #import "PHODPersistence.h"
 #import <GroundControl/NSUserDefaults+GroundControl.h>
@@ -72,9 +74,18 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[AFNetworkActivityLogger.sharedLogger startLogging];
 	
 	// prevent LivePhish.com and Phish.net from logging passwords in plaintext
-	AFNetworkActivityLogger.sharedLogger.filterPredicate = [NSPredicate predicateWithBlock:^BOOL(NSURLRequest *op, NSDictionary *bindings) {
-		return [op.URL.query containsString:@"session.getUserToken"] || [op.URL.query containsString:@"passwd="];
-	}];
+    AFNetworkActivityConsoleLogger *consoleLogger = nil;
+    for (id <AFNetworkActivityLoggerProtocol> logger in AFNetworkActivityLogger.sharedLogger.loggers) {
+        if ([logger isKindOfClass:[AFNetworkActivityConsoleLogger class]]) {
+            consoleLogger = logger;
+            break;
+        }
+    }
+    if (consoleLogger) {
+        consoleLogger.filterPredicate = [NSPredicate predicateWithBlock:^BOOL(NSURLRequest *op, NSDictionary *bindings) {
+            return [op.URL.query containsString:@"session.getUserToken"] || [op.URL.query containsString:@"passwd="];
+        }];
+    }
 	
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
 	NSString *ptsServer = infoDictionary[@"StatsServer"];

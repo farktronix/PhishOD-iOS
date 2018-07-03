@@ -12,7 +12,7 @@ target "PhishOD" do
 	pod 'ChameleonFramework'
 	pod 'SDCloudUserDefaults'
 	pod 'AFNetworking'
-	pod 'TDBadgedCell'
+	pod 'TDBadgedCell', :git => 'https://github.com/farktronix/TDBadgedCell.git'
 	pod 'TTTAttributedLabel'
 	pod 'SVWebViewController'
 	pod 'Appirater'

@@ -105,8 +105,8 @@ static NSString *kPhishNetAuthKeyKeychainKey = @"pnet_authkey";
 - (void)signInViewController:(PhishNetSignInViewController *)vc
     tappedSignInWithUsername:(NSString *)username
                  andPassword:(NSString *)password {
-    [SVProgressHUD showWithStatus:@"Contacting Phish.net"
-                         maskType:SVProgressHUDMaskTypeBlack];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    [SVProgressHUD showWithStatus:@"Contacting Phish.net"];
     
     [self validateUsername:username
               withPassword:password

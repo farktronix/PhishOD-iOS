@@ -10,7 +10,7 @@
 
 #import "IGAPIClient.h"
 
-@interface IguanaMediaItem : AGAudioItemBase
+@interface IguanaMediaItem : AGAudioItem
 
 - (instancetype)initWithTrack:(IGTrack*) track
                        inShow:(IGShow *) show;

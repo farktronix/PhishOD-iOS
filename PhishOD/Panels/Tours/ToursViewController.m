@@ -13,7 +13,7 @@
 #import "PTSHeatmapQuery.h"
 #import "PTSHeatmap.h"
 
-#import <TDBadgedCell/TDBadgedCell.h>
+@import TDBadgedCell;
 
 @implementation ToursViewController {
 	PTSHeatmap *_toursHeatmap;
@@ -96,10 +96,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-	TDBadgedCell *scell = (TDBadgedCell *)cell;
-	PhishinTour *tour = self.tours[indexPath.row];
-	float heatmapValue = [_toursHeatmap floatValueForKey:tour.slug];
-	[scell updateHeatmapLabelWithValue:heatmapValue];
+//    TDBadgedCell *scell = (TDBadgedCell *)cell;
+//    PhishinTour *tour = self.tours[indexPath.row];
+//    float heatmapValue = [_toursHeatmap floatValueForKey:tour.slug];
+// 	  [scell updateHeatmapLabelWithValue:heatmapValue];
 }
 
 @end

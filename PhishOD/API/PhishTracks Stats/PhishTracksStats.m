@@ -270,6 +270,7 @@ static PhishTracksStats *sharedPts;
 {
 	[self  GET:path
 	parameters:@{ @"limit": [NSNumber numberWithInteger:limit], @"offset": [NSNumber numberWithInteger:offset] }
+      progress:nil
 	   success:^(NSURLSessionTask *operation, NSArray *playEvents)
 	 {
 		 if (success) {
@@ -333,6 +334,7 @@ static PhishTracksStats *sharedPts;
 	
 	[self POST:@"plays/heatmaps.json"
 	parameters:[query asParams]
+      progress:nil
 	   success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {
@@ -358,6 +360,7 @@ static PhishTracksStats *sharedPts;
 {
 	[self GET:[self nestedResourcePathWithUserId:userId resourcePath:path]
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {
@@ -382,6 +385,7 @@ static PhishTracksStats *sharedPts;
 {
     [self POST:[self nestedResourcePathWithUserId:userId resourcePath:path]
 	parameters:[favorite asDictionary]
+      progress:nil
 	   success:^(NSURLSessionTask *operation, id responseObject)
 	 {
 		 if (success) {

@@ -13,6 +13,8 @@
 #import "PTSHeatmapQuery.h"
 #import "PTSHeatmap.h"
 
+@import TDBadgedCell;
+
 @interface YearsViewController ()
 
 @property (nonatomic) UISearchDisplayController *con;

@@ -11,6 +11,7 @@
 @implementation Value1SubtitleCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self relayout];
 }
 

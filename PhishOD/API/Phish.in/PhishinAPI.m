@@ -66,6 +66,7 @@
 
     [self GET:@"eras"
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  NSMutableArray *arr = [NSMutableArray array];
 		  responseObject = [self parseJSON:responseObject][@"data"];
@@ -97,6 +98,7 @@
 			   failure:(void ( ^ ) ( NSURLSessionTask *operation , NSError *error ))failure {
 	[self GET:[@"playlists/" stringByAppendingString:slug]
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, NSDictionary *res) {
 		  success([PhishinPlaylist.alloc initWithDictionary:res[@"data"]]);
 	  }
@@ -107,6 +109,7 @@
                  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
     [self GET:@"https://s3.amazonaws.com/phishod/playlists.json"
    parameters:nil
+     progress:nil
       success:^(NSURLSessionTask *operation, NSDictionary *responseObject) {
           success([responseObject[@"playlist_groups"] map:^id(NSDictionary *object) {
               return [PhishinPlaylistGroup.alloc initWithDictionary:object];
@@ -128,6 +131,7 @@
     
 	[self GET:@"years"
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -170,6 +174,7 @@
 
     [self GET:[@"years/" stringByAppendingString:year.year]
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -195,6 +200,7 @@
 	
 	[self GET:[NSString stringWithFormat:@"shows-on-day-of-year/%02d-%02d", (int)c.month, (int)c.day]
    parameters:@{@"per_page": @99999, @"sort_attr": @"date"}
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -235,6 +241,7 @@
 	
 	[self GET:path
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -252,6 +259,7 @@
 		   failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"random-show"
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -265,6 +273,7 @@
 		  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:[@"venues/" stringByAppendingFormat:@"%d", venue.id]
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -280,6 +289,7 @@
 	  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"songs"
    parameters:@{@"per_page": @99999, @"sort_attr": @"title"}
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -294,6 +304,7 @@
 	   failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"venues"
    parameters:@{@"per_page": @9999, @"sort_attr": @"name"}
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -309,6 +320,7 @@
 		 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:[@"songs/" stringByAppendingFormat:@"%ld", (long)song.id]
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -321,6 +333,7 @@
 	  failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"tours"
    parameters:@{@"per_page": @9999, @"sort_attr": @"starts_on"}
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -336,6 +349,7 @@
 		 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:[@"tours/" stringByAppendingFormat:@"%d", tour.id]
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  
@@ -349,6 +363,7 @@
 	   failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:[@"search/" stringByAppendingString: [searchTerm stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  responseObject = [self parseJSON:responseObject];
 		  

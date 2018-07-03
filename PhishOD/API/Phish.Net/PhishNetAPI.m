@@ -62,6 +62,7 @@
 	
 	[self GET:@"/api.json"
    parameters:margs
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  //			  dbug(@"%@", [[NSString alloc] initWithData:responseObject
 		  //												 encoding:NSUTF8StringEncoding]);
@@ -77,6 +78,7 @@
 						 failure:(void (^)(NSURLSessionTask *, NSError *))failure {
 	[self GET:@"http://phish.net/ratings"
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  NSString *page = [[NSString alloc] initWithData:responseObject
 												 encoding:NSASCIIStringEncoding];
@@ -103,6 +105,7 @@
 			success:(void (^)(NSArray *))success {
 	[self GET:[NSString stringWithFormat:@"http://phish.net/jamcharts/song/%@", date.netSlug , nil]
    parameters:nil
+     progress:nil
 	  success:^(NSURLSessionTask *operation, id responseObject) {
 		  NSString *page = [[NSString alloc] initWithData:responseObject
 												 encoding:NSASCIIStringEncoding];
@@ -143,6 +146,7 @@
 									  
 									  [self GET:@"http://phish.net/setlists/"
 									 parameters:@{@"showid": set.showId}
+                                       progress:nil
 										success:^(NSURLSessionTask *operation, id responseObject) {
 											NSString *page = [[NSString alloc] initWithData:responseObject
 																				   encoding:NSASCIIStringEncoding];

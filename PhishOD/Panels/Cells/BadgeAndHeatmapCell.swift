@@ -8,6 +8,7 @@
 
 import Foundation
 import TDBadgedCell
+import UIKit
 
 @objc class BadgeAndHeatmapCell : TDBadgedCell {
     @objc func updateHeatmapLabel(value: Double) {

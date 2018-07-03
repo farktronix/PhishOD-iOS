@@ -139,6 +139,7 @@
 - (void)search:(NSString *)queryString success:(void (^)(NSArray *))success {
     [self GET:[NSString stringWithFormat:@"artists/%@/search", self.artist.slug]
    parameters:@{@"q": queryString}
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           IGArtist *currentArtist = [self.artist copy];
           NSArray *s = [responseObject[@"data"][@"shows"] map:^id(id item) {
@@ -192,6 +193,7 @@
 - (void)artists:(void (^)(NSArray *))success {
     [self GET:@"artists"
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           NSArray *r = [responseObject[@"data"] map:^id(id item) {
               NSError *err;
@@ -229,6 +231,7 @@
 -(void)playlists:(void (^)(NSArray *))success {
     [self GET:@"playlists/all"
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           NSArray *r = [responseObject[@"data"] map:^id(id item) {
               NSError *err;
@@ -259,6 +262,7 @@
 - (void)years:(void (^)(NSArray *))success {
     [self GET:[self routeForArtist:@"years"]
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           NSArray *r = [responseObject[@"data"] map:^id(id item) {
               NSError *err;
@@ -285,6 +289,7 @@
 - (void)venues:(void (^)(NSArray *))success {
     [self GET:[NSString stringWithFormat:@"artists/%@/venues/", self.artist.slug]
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           NSArray *r = [responseObject[@"data"] map:^id(id item) {
               NSError *err;
@@ -312,6 +317,7 @@
     [self GET:[[NSString stringWithFormat:@"artists/%@/years/", self.artist.slug]
                stringByAppendingFormat:@"%lu", (unsigned long)year]
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           NSError *err;
           IGYear *y = [[IGYear alloc] initWithDictionary:responseObject[@"data"]
@@ -334,6 +340,7 @@
 - (void)venue:(IGVenue *)venue success:(void (^)(IGVenue *))success {
     [self GET:[[NSString stringWithFormat:@"artists/%@/venues/", self.artist.slug] stringByAppendingFormat:@"%lu", (unsigned long)venue.id]
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           NSError *err;
           IGVenue *y = [[IGVenue alloc] initWithDictionary:responseObject[@"data"]
@@ -356,6 +363,7 @@
 - (void)topShows:(void (^)(NSArray *))success {
     [self GET:[NSString stringWithFormat:@"artists/%@/top_shows/", self.artist.slug]
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           IGArtist *currentArtist = [self.artist copy];
           NSArray *r = [responseObject[@"data"] map:^id(id item) {
@@ -390,6 +398,7 @@
     [self GET:[[NSString stringWithFormat:@"artists/%@/years/", self.artist.slug]
                stringByAppendingFormat:@"%@/shows/%@", [displayDate substringToIndex:4], displayDate]
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           IGArtist *currentArtist = [self.artist copy];
           NSArray *r = [responseObject[@"data"] map:^id(id item) {
@@ -424,6 +433,7 @@
 - (void)randomShow:(void (^)(NSArray *))success {
     [self GET:[NSString stringWithFormat:@"artists/%@/random_show/", self.artist.slug]
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           IGArtist *currentArtist = [self.artist copy];
           NSArray *r = [responseObject[@"data"] map:^id(id item) {
@@ -471,6 +481,7 @@
                            @"id": [NSString stringWithFormat:@"%ld", (long)track.id],
                            @"bandName": show.artist.name
                            }}
+      progress:nil
        success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
            
        }
@@ -482,6 +493,7 @@
 - (void)today:(void (^)(NSArray<IGTodayArtist *> *))success {
     [self GET:@"today"
    parameters:nil
+     progress:nil
       success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
           NSArray *r = [responseObject[@"tih"] map:^id(id object) {
               NSError *err;

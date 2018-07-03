@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@import TCBlobDownloadSwift;
+#import <TCBlobDownloadSwift/TCBlobDownloadSwift-Swift.h>
 
 typedef NS_ENUM(NSInteger, PHODDownloadState) {
 	PHODDownloadStateReady = 0,

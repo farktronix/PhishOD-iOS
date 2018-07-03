@@ -16,7 +16,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - AGAudioPlayer (0.8.0):
+  - AGAudioPlayer (0.8.1):
     - BASSGaplessAudioPlayer
     - BCColor
     - Interpolate
@@ -63,7 +63,7 @@ PODS:
   - NapySlider (0.3.4)
   - NSObject-NSCoding (1.0)
   - ObjectiveSugar (1.1.0)
-  - PSUpdateApp (3.0):
+  - PSUpdateApp (3.1):
     - AFNetworking (~> 3.0)
   - Reachability (3.2)
   - SDCloudUserDefaults (1.0.2)
@@ -73,7 +73,7 @@ PODS:
   - SVProgressHUD (2.2.5)
   - SVWebViewController (1.0)
   - TCBlobDownloadSwift (0.1.16)
-  - TDBadgedCell (5.3.1)
+  - TDBadgedCell (5.3.2)
   - Toast (4.0.0)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -118,7 +118,7 @@ DEPENDENCIES:
   - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
   - SVWebViewController
   - TCBlobDownloadSwift (from `https://github.com/farktronix/TCBlobDownloadSwift.git`)
-  - TDBadgedCell
+  - TDBadgedCell (from `https://github.com/farktronix/TDBadgedCell.git`)
   - Toast
   - TTTAttributedLabel
   - UIActivityIndicator-for-SDWebImage
@@ -157,7 +157,6 @@ SPEC REPOS:
     - SDCloudUserDefaults
     - SDWebImage
     - SVWebViewController
-    - TDBadgedCell
     - Toast
     - TTTAttributedLabel
     - UIActivityIndicator-for-SDWebImage
@@ -185,10 +184,12 @@ EXTERNAL SOURCES:
     :git: https://github.com/SVProgressHUD/SVProgressHUD.git
   TCBlobDownloadSwift:
     :git: https://github.com/farktronix/TCBlobDownloadSwift.git
+  TDBadgedCell:
+    :git: https://github.com/farktronix/TDBadgedCell.git
 
 CHECKOUT OPTIONS:
   AGAudioPlayer:
-    :commit: 0b85cea7cb5bc06355a481cd659ce1afedd9d1a8
+    :commit: 7df8b7b26088a992a4a5c5945d9c89edb39f8445
     :git: https://github.com/farktronix/AGAudioPlayer.git
   ASImageResize:
     :commit: 02486719415322af68d835ec9b030d167537996b
@@ -209,7 +210,7 @@ CHECKOUT OPTIONS:
     :commit: 7965e5766f076c535c0c9a26dc56034cd292487b
     :git: https://github.com/alecgorge/NSObject-NSCoding.git
   PSUpdateApp:
-    :commit: 4a9af2ccb49901b1cf7e3d78212c8898407a2ada
+    :commit: 52422e7419bace540ba972ee2ac13f552a8b6239
     :git: https://github.com/farktronix/PSUpdateApp.git
   SVProgressHUD:
     :commit: 12ef3375791136be10cc8685fa8074ec56a64491
@@ -217,11 +218,14 @@ CHECKOUT OPTIONS:
   TCBlobDownloadSwift:
     :commit: acbf158c1a38224973196d2f52171be43bceeeff
     :git: https://github.com/farktronix/TCBlobDownloadSwift.git
+  TDBadgedCell:
+    :commit: 1d4f93f9b969433c087b24987e3a7c45f7da87da
+    :git: https://github.com/farktronix/TDBadgedCell.git
 
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  AGAudioPlayer: 6788a6536fd6ba55b1b4cae5f25e4f5d51fe7a87
+  AGAudioPlayer: b814b4c51ebfa547740e30e17780983a6d0e790e
   Appirater: 44a4651f7912a17dc906b655f0c215d5bb768b84
   ASImageResize: 199e6d10a32b706f8cedb08b8bc041d7125f9261
   AXRatingView: b975cd1a11c6c2e76c8999c166e089ed26f54133
@@ -253,19 +257,19 @@ SPEC CHECKSUMS:
   NapySlider: cdced5cf00e407e0a5f2cb0a6ef826b329cda024
   NSObject-NSCoding: d05f937cc1ea1560294be261ee41d5438ddc7b1b
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
-  PSUpdateApp: 46100903d1eb4f6deb0726f31bf2e9645aa94b55
+  PSUpdateApp: d31e643670863bf9bab50da8fff27573f083d9ae
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDCloudUserDefaults: cacf733d192160d94364efab8548ae3302615a65
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
   TCBlobDownloadSwift: 5feedc57af8c115092b7703ac5b155e171f21a39
-  TDBadgedCell: d5da3bfc4e3eb27a301f87b1af192917a8638a89
+  TDBadgedCell: 6369f09a313195f73937cfdff88a7285d688ad79
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   VTAcknowledgementsViewController: 6056f5f5e5ed995bbf0581bed6ddd29355ca9a80
 
-PODFILE CHECKSUM: fa8a43acc5a1f290b7fd247e42e6de019a7f7a0b
+PODFILE CHECKSUM: e56220068ce35126ac6bf46e4c13ce57831587b6
 
 COCOAPODS: 1.5.3

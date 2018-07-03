@@ -158,7 +158,7 @@
 }
 
 - (IBAction)favoriteTapped:(id)sender {
-    id<AGAudioItem> item = AGMediaPlayerViewController.sharedInstance.currentItem;
+    AGAudioItem* item = AGMediaPlayerViewController.sharedInstance.currentItem;
     
     PhishinMediaItem *pi = (PhishinMediaItem *)item;
     

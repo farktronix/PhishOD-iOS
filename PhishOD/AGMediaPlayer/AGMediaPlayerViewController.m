@@ -119,10 +119,6 @@ uiNeedsRedrawForReason:(AGAudioPlayerRedrawReason)reason
           extraInfo:(NSDictionary *)dict {
     [self redrawUI];
 
-    if(reason == AGAudioPlayerTrackProgressUpdated) {
-        return;
-    }
-    
     [self setupBar];
     [self.uiPlaybackQueueTable reloadData];
     [self updateStatusBar];
@@ -368,7 +364,7 @@ uiNeedsRedrawForReason:(AGAudioPlayerRedrawReason)reason
     return self.audioPlayer.isBuffering;
 }
 
-- (id<AGAudioItem>)currentItem {
+- (AGAudioItem *)currentItem {
     return self.audioPlayer.currentItem;
 }
 
@@ -376,7 +372,7 @@ uiNeedsRedrawForReason:(AGAudioPlayerRedrawReason)reason
     return self.audioPlayer.nextIndex;
 }
 
-- (id<AGAudioItem>)nextItem {
+- (AGAudioItem *)nextItem {
     return self.audioPlayer.nextItem;
 }
 
@@ -462,7 +458,7 @@ uiNeedsRedrawForReason:(AGAudioPlayerRedrawReason)reason
     [self.uiPlaybackQueueTable reloadData];
 }
 
-- (void)insertItem:(id<AGAudioItem>)item atIndex:(NSUInteger)index {
+- (void)insertItem:(AGAudioItem *)item atIndex:(NSUInteger)index {
     [self.queue insertItem:item atIndex:index];
     
     [self.uiPlaybackQueueTable reloadData];
@@ -635,19 +631,19 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
                                          failureHandler:nil];
         }
         
-        NSObject<AGAudioItem> *obj = (NSObject<AGAudioItem> *)self.currentItem;
+        AGAudioItem *obj = (AGAudioItem *)self.currentItem;
         
         [IGEvents trackEvent:@"played_track"
               withAttributes:@{@"provider": NSStringFromClass(obj.class),
                                @"title": self.currentItem.title,
                                @"album": self.currentItem.album,
-                               @"is_cached_attr": @(self.currentItem.isCached).stringValue,
+                               @"is_cached_attr": @(NO).stringValue,
                                @"artist": self.currentItem.artist,
                                @"id": @(self.currentItem.id),
                                @"duration": [NSNumber numberWithFloat:self.duration],
                                }
                   andMetrics:@{@"duration": [NSNumber numberWithFloat:self.duration],
-                               @"is_cached": [NSNumber numberWithBool:self.currentItem.isCached]}];
+                               @"is_cached": [NSNumber numberWithBool:NO]}];
         
 		self.currentTrackHasBeenScrobbled = YES;
 		
