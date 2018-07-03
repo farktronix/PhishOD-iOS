@@ -13,7 +13,7 @@
 
 #import "PhishAlbumArts.h"
 
-NSArray *PHODYearColors = nil;
+NSArray <UIColor *> *PHODYearColors = nil;
 
 @implementation PhishAlbumArtCache
 
@@ -64,6 +64,12 @@ NSArray *PHODYearColors = nil;
         ];
     }
     return self;
+}
+
+- (UIColor *)colorForYear:(NSInteger)year {
+    NSInteger index = MAX(0, year - 1987);
+    index = MIN(PHODYearColors.count - 1, index);
+    return PHODYearColors[index];
 }
 
 - (void)setupImageCache {
@@ -132,9 +138,7 @@ wantsSourceImageForEntity:(id<FICEntity>)entity
                                 fromQueryItems:urlComponents.queryItems];
         
         NSInteger year = [[date substringToIndex:4] integerValue];
-        NSInteger index = MAX(0, year - 1987);
-        
-        UIColor *baseColor = [PHODYearColors[index] darken:0.05];
+        UIColor *baseColor = [[self colorForYear:year] darken:0.05];
         
         NSInteger month = [[date substringWithRange:NSMakeRange(5, 2)] integerValue];
         

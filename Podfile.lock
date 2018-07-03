@@ -16,7 +16,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - AGAudioPlayer (0.8.1):
+  - AGAudioPlayer (0.8.2):
     - BASSGaplessAudioPlayer
     - BCColor
     - Interpolate
@@ -189,7 +189,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   AGAudioPlayer:
-    :commit: 7df8b7b26088a992a4a5c5945d9c89edb39f8445
+    :commit: 4365a63ba1f15e25c37a74ff405c3601baec6016
     :git: https://github.com/farktronix/AGAudioPlayer.git
   ASImageResize:
     :commit: 02486719415322af68d835ec9b030d167537996b
@@ -225,7 +225,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  AGAudioPlayer: b814b4c51ebfa547740e30e17780983a6d0e790e
+  AGAudioPlayer: 72a2a9675e28aa0a953e30d34f30a887a206b99e
   Appirater: 44a4651f7912a17dc906b655f0c215d5bb768b84
   ASImageResize: 199e6d10a32b706f8cedb08b8bc041d7125f9261
   AXRatingView: b975cd1a11c6c2e76c8999c166e089ed26f54133
