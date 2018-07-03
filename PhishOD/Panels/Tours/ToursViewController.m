@@ -12,6 +12,7 @@
 #import "PhishTracksStats.h"
 #import "PTSHeatmapQuery.h"
 #import "PTSHeatmap.h"
+#import "PhishOD-Swift.h"
 
 @import TDBadgedCell;
 
@@ -62,11 +63,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
 		 cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	TDBadgedCell *cell = (TDBadgedCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
+	BadgeAndHeatmapCell *cell = (BadgeAndHeatmapCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
 	
 	if(!cell) {
-		cell = [[TDBadgedCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                   reuseIdentifier:@"Cell"];
+		cell = [[BadgeAndHeatmapCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                          reuseIdentifier:@"Cell"];
 	}
 	
 	PhishinTour *tour = self.tours[indexPath.row];
@@ -96,10 +97,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    TDBadgedCell *scell = (TDBadgedCell *)cell;
-//    PhishinTour *tour = self.tours[indexPath.row];
-//    float heatmapValue = [_toursHeatmap floatValueForKey:tour.slug];
-// 	  [scell updateHeatmapLabelWithValue:heatmapValue];
+    BadgeAndHeatmapCell *scell = (BadgeAndHeatmapCell *)cell;
+    PhishinTour *tour = self.tours[indexPath.row];
+    float heatmapValue = [_toursHeatmap floatValueForKey:tour.slug];
+       [scell updateHeatmapLabelWithValue:heatmapValue];
 }
 
 @end

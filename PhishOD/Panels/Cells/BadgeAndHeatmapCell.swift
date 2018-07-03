@@ -12,7 +12,7 @@ import UIKit
 
 @objc class BadgeAndHeatmapCell : TDBadgedCell {
     @objc func updateHeatmapLabel(value: Double) {
-        self.heatmapView.isHidden = value < 0.6 || UserDefaults.standard.bool(forKey: "heatmaps.enabled")
+        self.heatmapView.isHidden = (UserDefaults.standard.bool(forKey: "heatmaps.enabled") == false)
         let max_height : CGFloat = self.heatmapView.frame.size.height;
         var hm = self.heatmapValue.frame;
         hm.origin.y = CGFloat(Double(max_height) * (1.0 - value));
